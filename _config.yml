@@ -99,6 +99,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
+## https://github.com/yelog/hexo-theme-3-hexo.git
 theme: landscape
 
 # Deployment
