@@ -7,3 +7,5 @@ public/
 .deploy*/
 _multiconfig.yml
 .idea
+themes/3-hexo
+themes/landscape

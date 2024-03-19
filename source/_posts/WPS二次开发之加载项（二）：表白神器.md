@@ -1,7 +1,11 @@
 ---
 title: WPS二次开发之加载项（二）：表白神器
 date: 2022-10-08 16:51:00
+categories:
+  - [技术, 前端]
 tags:
+  - WPS
+thumbnail: /images/wps.png
 ---
 
 这次咱们试试在一个sheet表上画画，这里的画画不是直接插入一张图片，而使修改单元格颜色，拼出一张图片。
@@ -150,4 +154,4 @@ export default {
 
 终端执行 wps debug开启调试，随后点击“按钮Disable”，再点击“弹对话框网页”打开图片选择窗口，效果如下
 
-![](https://oscimg.oschina.net/oscnet/up-236494fcbe882c4a8bf9abe8d8749420f35.png)
+![](/images/wps.png)

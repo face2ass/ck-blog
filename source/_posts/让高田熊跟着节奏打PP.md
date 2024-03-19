@@ -1,17 +1,22 @@
 ---
 title: 让高田熊跟着节奏打PP
 date: 2023-04-10 15:15:00
+categories:
+   - [技术, 前端]
 tags:
+   - PixiJS
+   - Web Audio
+thumbnail: /images/ketakuma.gif
 ---
 
 > 这篇博客的灵感源头是B站的这个魔性视频：BV1uL411g7Yg，突然想写个高田熊打PP的音乐可视化页面
 
 这个页面使用的软件、框架、技术主要有：录屏工具、Photoshop、[TexturePacker](https://www.codeandweb.com/texturepacker)、[PixiJS](https://pixijs.com/)、[Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Best_practices)
-
+<!-- more -->
 页面效果如下，说说我的实现方式：
 
-![](https://oscimg.oschina.net/oscnet/up-e86639d925b22a627b51624511b3a547a27.gif)
-<!-- more -->
+![](/images/ketakuma.gif)
+
 1. 下面的几个步骤主要目的是为了获得动画的序列帧，与前端技术无关，有其他办法的朋友可略过。
    - 打开视频网站，使用手头的录屏工具把几个关键动作录制下来，我用的工具是BandiCam，导出mp4；
    - 打开Photoshop，点击 文件->导入->视频帧到图层，勾选 窗口->时间轴，然后在下方的时间轴面板 移除重复关键帧，同时删除关联图层（可以让导出速度快一些），修改播放速度，移除水印；
@@ -146,7 +151,7 @@ gainNode.connect(audioCtx.destination);
 
 将会创造一个如下音频节点图：
 
-![](https://oscimg.oschina.net/oscnet/up-009c817405123c71d8e77c79c53792a1456.png)
+![](/images/ketakuma-2.png)
 
 （给火狐打个广告：Firefox32 以上版本已有完整的 firefox 开发者工具包括[Web Audio Editor](https://firefox-source-docs.mozilla.org/devtools-user/web_audio_editor/index.html)—— 一个对测试 web audio 表的 bug 非常有用的东西）
 

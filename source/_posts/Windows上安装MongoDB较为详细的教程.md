@@ -5,10 +5,10 @@ categories:
 - [技术, 后端, 数据库]
 tags:
 - MongoDB
+thumbnail: /images/cmd.webp
 ---
 
 > 先前写了一篇关于 MongoDB 聚合查询的博文，里面的实验一直使用的是公司搭建好的 Mongo 环境，作为一个还未入门的新手，学会自己搭建运行环境还是相当必要的，既方便测试，也能更深入的了解 Mongo。
-
 
 *ps：开始教程前要先注意一下自己的 Windows 版本，MongoDB 从 2.2 版本开始就不再支持 Windows XP*
 <!-- more -->

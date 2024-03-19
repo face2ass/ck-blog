@@ -1,12 +1,13 @@
 ---
 title: 如何优雅地在Windows上使用Nginx
 date: 2017-07-23 17:27:00
+thumbnail: /images/cmd.webp
 tags:
 ---
 Nginx是一个非常好用的HTTP和反向代理服务器，但是如果你在开发过程中严重依赖nginx，频繁修改配置文件，是不是觉得每次双击nginx.exe，任务管理器中结束进程 的方式效率又低又土？今天我们就用更geek的方式来操作nginx——将其安装位为windows服务。
-
-虽然Nginx官网上说未来的版本会增加windows服务的功能（[http://nginx.org/en/docs/windows.html#Possible-future-enhancements](http://nginx.org/en/docs/windows.html#Possible-future-enhancements)），这不是还没出来嘛，咱们自己来搞定。
 <!-- more -->
+虽然Nginx官网上说未来的版本会增加windows服务的功能（[http://nginx.org/en/docs/windows.html#Possible-future-enhancements](http://nginx.org/en/docs/windows.html#Possible-future-enhancements)），这不是还没出来嘛，咱们自己来搞定。
+
 所谓windows服务 其实就是操作系统在后台以守护进程的方式运行的程序，相信很多用过tomcat、apache 或者 mysql、mongoDB的小伙伴们都知道这玩意儿，比如电脑安装了mysql5.6.就可以通过命令行输入net start mysql56和 net stop mysql56 来启动或停止mysql服务（其中mysql56是默认服务名，不同的版本名字不同，安装时可以修改 ）。
 
 是不是觉得很方便？下面我们就来试试如何通过net start/stop nginx的命令来启动/停止nginx。

@@ -1,0 +1,47 @@
+@import "_partial/hljs";
+@import "_partial/header";
+@import "_partial/sidebar";
+@import "_partial/archive";
+@import "_partial/article";
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border: 0 none transparent;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c0c0c0;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #b4b3b3;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border: 0 none transparent;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: transparent;
+}
+
+::-webkit-scrollbar-track:active {
+  background: transparent;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}

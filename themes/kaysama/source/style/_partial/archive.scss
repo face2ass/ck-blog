@@ -1,0 +1,64 @@
+.article-section {
+  padding: 1.5rem;
+
+  & > .article-top {
+    padding: 0 1.5rem 0.5rem 0;
+    //标题
+    & > .article-title {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+
+      a {
+        // 去掉浏览器默认样式
+        //color: inherit;
+      }
+    }
+  }
+
+  & > .article-content {
+    display: flex;
+    //简介
+    & > .article-excerpt {
+      width: 100%;
+      padding-right: 1rem;
+      flex: 1;
+      //max-height: 80px;
+      //overflow: hidden;
+      b, strong, h1, h2, h3, h4, h5, h6 {
+        font-weight: normal;
+      }
+
+      p {
+        margin-bottom: 0.5em;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      a {
+        color: var(--bs-body-color);
+      }
+    }
+
+    //封面
+    .article-cover {
+      flex: 0 0 200px;
+      width: 200px;
+      box-sizing: border-box;
+      background: no-repeat center / contain;
+    }
+  }
+
+  //更多按钮
+  .btn-more {
+    margin-top: 0.2rem;
+
+    & > .bi {
+      margin-top: 0.2rem;
+    }
+  }
+}

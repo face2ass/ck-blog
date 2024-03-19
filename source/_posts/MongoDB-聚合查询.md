@@ -5,17 +5,18 @@ categories:
   - [技术, 后端, 数据库]
 tags:
   - MongoDB
+thumbnail: /images/mongodb.webp
 ---
 
 > ps：以前都在 iteye 写博文，现在工作换了，转战前端，基本告别了 java 和 python，就把那里的博客迁过来了～～～
 
 
 出于对性能的要求，公司希望把 Mysql 的数据迁移到 MongoDB 上，于是我开始学习 Mongo 的一些 CRUD 操作，由于第一次接触 NoSQL，还是有点不习惯。
-
+<!-- more -->
 先吐个槽，公司的 Mongo 版本是 2.6.4，而用的 java 驱动包版本是超级老物 2.4 版。当时一个 “如何对分组后的文档进行筛选” 这个需求头痛了很久，虽然 shell 命令下可以使用 Aggregation 很方便地解决，但是 java 驱动包从 2.9.0 版本才开始支持该特性，我至今没有找到不用 Aggregation 解决上述需求的办法。只能推荐公司升级驱动包版本，希望没有后续的兼容问题。
 
 Mongo2.2 版本后开始支持 Aggregation Pipeline，而 java 驱动包从 2.9.0 版本才开始支持 2.2 的特性，2.9 版本是 12 年发布的，mongodb 在 09 年就出现了，似乎 Mongo 对 java 的开发者不怎么友好←_←
-<!-- more -->
+
 MongoDB 目前提供了三个可以执行聚合操作的命令：aggregate、mapReduce、group。三者在性能和操作的优劣比较见官网提供的表格 Aggregation Commands Comparison，这里不再赘述细节。
 
 aggregate、mapReduce、group 原型及内部实现
@@ -404,4 +405,4 @@ db.dogroup.aggregate({
 弄熟上面这几个方法，大部分的分组应用场景应该没大问题了。
 
 这张图示可以更直观地理解（点击看大图）：
-![MongoDB](./MongoDB-聚合查询/mongodb.webp)
+![MongoDB](/images/mongodb.webp)

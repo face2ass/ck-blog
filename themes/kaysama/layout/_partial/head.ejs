@@ -1,0 +1,35 @@
+<head>
+  <meta charset="utf-8">
+  <%
+  var title = page.title;
+
+  if (is_archive()) {
+    title = '归档';
+
+    if (is_month()) {
+      title += ': ' + page.year + '/' + page.month;
+    } else if (is_year()) {
+      title += ': ' + page.year;
+    }
+  } else if (is_category()) {
+    title = '分类' + ': ' + page.category;
+  } else if (is_tag()) {
+    title = '标签' + ': ' + page.tag;
+  }
+  %>
+  <title>
+    <% if (title){ %>
+      <%= title %> |
+    <% } %>
+    <%= config.title %>
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <% if (theme.favicon){ %>
+    <%- favicon_tag(theme.favicon) %>
+  <% } %>
+  <% if (theme.fancybox){ %>
+    <%- css('fancybox/jquery.fancybox.min.css') %>
+  <% } %>
+  <%- css('bootstrap/bootstrap@5.3.3.min.css') %>
+  <%- css('style/index') %>
+</head>

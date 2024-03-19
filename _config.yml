@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Kaysama's Blog
 subtitle: ''
 description: ''
 keywords:
 author: John Doe
-language: en
+language: zh-CN
 timezone: ''
 
 # URL
@@ -40,23 +40,22 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: true
-marked:
-  prependRoot: true
-  postAsset: true
+post_asset_folder: false
 relative_link: false
 future: true
 syntax_highlighter: highlight.js
 highlight:
-  line_number: true
   auto_detect: false
-  tab_replace: ''
-  wrap: true
-  hljs: false
-prismjs:
-  preprocess: true
   line_number: true
-  tab_replace: ''
+  line_threshold: 0
+  tab_replace: '  '
+  exclude_languages:
+    - example
+  wrap: true
+  hljs: true
+#highlight:
+#  enable: false
+#syntax_highlighter:  # empty
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -87,7 +86,7 @@ updated_option: 'mtime'
 
 # Pagination
 ## Set per_page to 0 to disable pagination
-per_page: 10
+per_page: 20
 pagination_dir: page
 
 # Include / Exclude file(s)
@@ -100,7 +99,7 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 ## https://github.com/yelog/hexo-theme-3-hexo.git
-theme: landscape
+theme: kaysama
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
