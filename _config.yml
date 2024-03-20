@@ -52,7 +52,7 @@ highlight:
   exclude_languages:
     - example
   wrap: true
-  hljs: true
+  hljs: false
 #highlight:
 #  enable: false
 #syntax_highlighter:  # empty

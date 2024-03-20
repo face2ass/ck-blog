@@ -1,6 +1,13 @@
 node_sass:
   outputStyle: expanded
 
+# Header
+navs:
+  首页: /
+  时间轴: /archives
+  分类: /category
+  标签: /tag
+
 # Content
 excerpt_link: 查看更多
 fancybox: true
