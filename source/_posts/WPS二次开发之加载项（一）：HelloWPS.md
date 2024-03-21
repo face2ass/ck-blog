@@ -6,7 +6,6 @@ categories:
 tags:
   - WPS
 excerpt: "PS 加载项是一套基于 Web 技术用来扩展 WPS 应用程序的解决方案。每个 WPS 加载项都对应打开了一个网页，并通过调用网页中 JavaScript 方法来完成其功能逻辑。 WPS 加载项打开的网页可以直接与 WPS 应用程序进行交互，同时一个 WPS 加载项中的多个网页形成了一个整体， 相互之间可以进行数据共享。 开发者不必关注浏览器兼容的问题，因为 WPS 加载项的底层是以 Chromium 开源浏览器项目为基础进行的优化扩展。 WPS 加载项具备快速开发、轻量化、跨平台的特性，目前已针对Windows/Linux操作系统进行适配。 WPS 加载项功能特点如下:"
-thumbnail: /images/wps-1.webp
 ---
 
 官方对WPS加载项的解释：

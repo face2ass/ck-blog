@@ -1,15 +1,19 @@
 ---
 title: Sequelize常用操作
 date: 2022-07-23 22:28:00
+categories:
+  - [技术, 后端]
 tags:
+  - Node
+  - 数据库
+  - Sequelize
 ---
 
 Sequelize是一个基于Node.js的一款ORM框架，目前支持 Postgres, MySQL, MariaDB, SQLite 以及 Microsoft SQL Server数据库。支持事务、 关联关系、 预读、延迟加载、读取复制等功能。
 
 Sequelize官网文档有点过于简洁了，数据库-模型之间的一些复杂但是非常实用的操作并没有收录，所以这篇文章是Sequelize对数据库一些常见操作的实践记录。基于我踩的一对坑撰写，可能有点像流水账，开始之前需要你对Sequelize的基本概念有所了解。
-
-创建User表：
 <!-- more -->
+创建User表：
 ```javascript
 User.init(
   {

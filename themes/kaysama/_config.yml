@@ -5,12 +5,13 @@ node_sass:
 navs:
   首页: /
   时间轴: /archives
-  分类: /category
+  分类: /categories
   标签: /tag
+  关于我: /about
 
 # Content
 excerpt_link: 查看更多
-fancybox: true
+
 
 # # Footer
 # copyright: |-

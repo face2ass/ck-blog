@@ -10,8 +10,9 @@
   }
 
   blockquote {
-    padding: 0.8rem;
-    background-color: rgba(150, 150, 150, 0.2);
+    padding: 0.8rem 0.8rem 0.8rem 0.4rem;
+    background-color: rgba(150, 150, 150, 0.15);
+    border-left: 0.8rem solid rgba(150, 150, 150, 0.2);
     border-radius: var(--bs-border-radius);
 
     p:last-child {

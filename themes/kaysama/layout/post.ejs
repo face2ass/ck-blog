@@ -1,1 +1,9 @@
-<%- partial('_partial/article', {post: page, index: false, type: 'post'}) %>
+<%# partial('_partial/article', {post: page, index: false, type: 'post'}) %>
+<%# 文章详情 %>
+<article class="blog-post">
+  <h2 class="display-5 link-body-emphasis mb-1"><%= page.title %></h2>
+  <p class="blog-post-meta"><%= date(page.date) %></p>
+  <div id="blog-post-content">
+    <%- page.content %>
+  </div>
+</article>

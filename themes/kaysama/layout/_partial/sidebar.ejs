@@ -1,51 +1,12 @@
 <div class="position-sticky" style="top: 2rem;">
-  <!--        关于我-->
+  <%# 关于我 %>
   <div class="p-4 mb-3 bg-body-tertiary rounded">
-    <h4 class="fst-italic">About</h4>
-    <p class="mb-0">Customize this section to tell your visitors a little bit about your publication, writers, content, or something else entirely. Totally up to you.</p>
+    <h4 class="fst-italic">关于博主</h4>
+    <p class="mb-0">从 Java 转 Python 转 JavaScript 的三姓家奴，一路踩坑的代码人生，编程江湖里飘荡的一粒小卡拉米</p>
   </div>
 
-  <!--        最近发布-->
-  <div>
-    <h4 class="fst-italic">Recent posts</h4>
-    <ul class="list-unstyled">
-      <li>
-        <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
-          <svg class="bd-placeholder-img" width="100%" height="96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <rect width="100%" height="100%" fill="#777"></rect>
-          </svg>
-          <div class="col-lg-8">
-            <h6 class="mb-0">Example blog post title</h6>
-            <small class="text-body-secondary">January 15, 2024</small>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
-          <svg class="bd-placeholder-img" width="100%" height="96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <rect width="100%" height="100%" fill="#777"></rect>
-          </svg>
-          <div class="col-lg-8">
-            <h6 class="mb-0">This is another blog post title</h6>
-            <small class="text-body-secondary">January 14, 2024</small>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
-          <svg class="bd-placeholder-img" width="100%" height="96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <rect width="100%" height="100%" fill="#777"></rect>
-          </svg>
-          <div class="col-lg-8">
-            <h6 class="mb-0">Longer blog post title: This one has multiple lines!</h6>
-            <small class="text-body-secondary">January 13, 2024</small>
-          </div>
-        </a>
-      </li>
-    </ul>
-  </div>
 
-  <!--        归档-->
+  <%# 归档 %>
   <div class="p-4">
     <h4 class="fst-italic">Archives</h4>
     <ol class="list-unstyled mb-0">
@@ -64,7 +25,7 @@
     </ol>
   </div>
 
-  <!--        分类-->
+  <%# 分类 %>
   <div class="p-4">
     <h4 class="fst-italic">Category</h4>
     <ul class="list-unstyled ps-0">
@@ -106,24 +67,10 @@
           </ul>
         </div>
       </li>
-      <li class="border-top my-3"></li>
-      <li class="mb-1">
-        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
-          Account
-        </button>
-        <div class="collapse" id="account-collapse">
-          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">New...</a></li>
-            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Profile</a></li>
-            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Settings</a></li>
-            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Sign out</a></li>
-          </ul>
-        </div>
-      </li>
     </ul>
   </div>
 
-  <!--        友情链接-->
+  <%# 友情链接 %>
   <div class="p-4">
     <h4 class="fst-italic">Elsewhere</h4>
     <ol class="list-unstyled">
@@ -132,4 +79,46 @@
       <li><a href="#">Facebook</a></li>
     </ol>
   </div>
+
+  <%# 最近发布 %>
+  <%#
+  <div>
+    <h4 class="fst-italic">Recent posts</h4>
+    <ul class="list-unstyled">
+      <li>
+        <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
+          <svg class="bd-placeholder-img" width="100%" height="96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#777"></rect>
+          </svg>
+          <div class="col-lg-8">
+            <h6 class="mb-0">Example blog post title</h6>
+            <small class="text-body-secondary">January 15, 2024</small>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
+          <svg class="bd-placeholder-img" width="100%" height="96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#777"></rect>
+          </svg>
+          <div class="col-lg-8">
+            <h6 class="mb-0">This is another blog post title</h6>
+            <small class="text-body-secondary">January 14, 2024</small>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
+          <svg class="bd-placeholder-img" width="100%" height="96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#777"></rect>
+          </svg>
+          <div class="col-lg-8">
+            <h6 class="mb-0">Longer blog post title: This one has multiple lines!</h6>
+            <small class="text-body-secondary">January 13, 2024</small>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+  %>
 </div>

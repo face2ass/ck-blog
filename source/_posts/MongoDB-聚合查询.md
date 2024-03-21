@@ -5,7 +5,6 @@ categories:
   - [技术, 后端, 数据库]
 tags:
   - MongoDB
-thumbnail: /images/mongodb.webp
 ---
 
 > ps：以前都在 iteye 写博文，现在工作换了，转战前端，基本告别了 java 和 python，就把那里的博客迁过来了～～～

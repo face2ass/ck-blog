@@ -5,7 +5,6 @@ categories:
   - [技术, 前端]
 tags:
   - WPS
-thumbnail: /images/wps.png
 ---
 
 这次咱们试试在一个sheet表上画画，这里的画画不是直接插入一张图片，而使修改单元格颜色，拼出一张图片。

@@ -6,7 +6,6 @@ categories:
 tags:
    - PixiJS
    - Web Audio
-thumbnail: /images/ketakuma.gif
 ---
 
 > 这篇博客的灵感源头是B站的这个魔性视频：BV1uL411g7Yg，突然想写个高田熊打PP的音乐可视化页面
