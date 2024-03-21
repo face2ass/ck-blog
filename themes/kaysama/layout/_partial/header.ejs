@@ -5,11 +5,12 @@
     </svg>
     <span class="fs-4"><%= config.title %></span>
   </a>
-
   <ul class="nav nav-pills">
     <% for (const key in theme.navs){ %>
-      <li class="nav-item"><a href="<%= url_for(theme.navs[key]) %>" class="nav-link"><%= key %></a></li>
+      <li class="nav-item">
+        <% const navPath = theme.navs[key] %>
+        <a href="<%= url_for(navPath) %>" class="nav-link <%= is_current(navPath) ? 'active' : '' %>"><%= key %></a>
+      </li>
     <% } %>
-<!--      <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>-->
   </ul>
 </header>
