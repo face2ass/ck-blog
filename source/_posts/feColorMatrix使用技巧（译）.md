@@ -6,7 +6,6 @@ categories:
 tags:
   - Svg
   - 图形
-excerpt: 你们见过 Spotify 的年终活动吗？他们通过图像颜色处理创造了引人注目的视觉美感。<br>善用图形处理可以增加我们网页的逼格——过滤器filter就能通过动态串联的方式帮我们在浏览器做到这一点。
 ---
 
 你们见过 Spotify 的年终活动吗？他们通过图像颜色处理创造了引人注目的视觉美感。
@@ -22,7 +21,7 @@ excerpt: 你们见过 Spotify 的年终活动吗？他们通过图像颜色处�
 ![Image grid from Una Kravets’ CSSGram showing a variety of filters and blend modes that recreate Instagram filters](/images/fecolormatrix_2.jpg)
 
 现在，这可以通过修补和混合模式来完成——但CSS过滤器有一个巨大的缺点：它无法控制RGBA通道。但是SVG的feColorMatrix弥补了这个不足。
-
+<!-- more -->
 ## SVG filters
 
 在SVG中，fe-前缀表示滤镜相关属性。它们可以产生各种各样的颜色效果，比如模糊，比如生成3D纹理。

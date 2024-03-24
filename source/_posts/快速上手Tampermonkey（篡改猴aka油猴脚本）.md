@@ -1,14 +1,18 @@
 ---
 title: 快速上手Tampermonkey（篡改猴aka油猴脚本）
 date: 2021-01-16 14:20:00
+categories:
+  - [技术, 前端]
 tags:
+  - Tampermonkey
 ---
 
 首先怎么安装就不详细说了，去火狐、chrome或edge的应用商店搜索Tampermonkey安装即可。官网在此：[https://www.tampermonkey.net](https://www.tampermonkey.net/)
-<!-- more -->
+
 # 注解配置项说明
 
 配置说明
+<!-- more -->
 | 配置项  (a-z ↑) | 说明 |
 | --- | --- |
 | @antifeature | 隐私与安全声明，如内嵌广告、收集用户数据、挖矿 |

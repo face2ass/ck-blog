@@ -1,7 +1,13 @@
 ---
 title: Vite+WebSocket+Express+quill跨端内容同步
 date: 2021-04-29 23:42:00
+categories:
+  - [技术, 前端]
 tags:
+  - WebSocket
+  - Vite
+  - Express
+  - Quill
 ---
 
 最近经常碰到一种场景，手机复制粘贴一些文本等内容到电脑，或者电脑发到手机。

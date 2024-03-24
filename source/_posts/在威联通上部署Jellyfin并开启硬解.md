@@ -1,7 +1,12 @@
 ---
 title: 在威联通上部署Jellyfin并开启硬解
 date: 2022-02-18 13:46:00
+categories:
+  - [日常]
 tags:
+  - Nas
+  - 威联通
+  - Jellyfin
 ---
 
 > 本文主要参考了文章 [威联通非官方入坑手册 篇六：3分钟部署Jellyfin开启硬解，打造最好用的家庭影音中心，免费！Emby、Plex靠边下](https://post.smzdm.com/p/ad2vzx5d/) 和 [威联通Docker教程 篇六：三种方式安装Emby和Jellyfin，家庭影院搭建保姆级教程，成功开启硬件转码！](https://post.smzdm.com/p/a7837qdg/)。没多少原创内容，基本都是对两篇文章的细节整理

@@ -1,11 +1,14 @@
 ---
 title: 发布网页到WallpaperEngine的Steam创意工坊
 date: 2020-07-25 21:23:00
+categories:
+  - [日常]
 tags:
+  - Steam
 ---
 
 Steam重度用户都应该知道[Wallpaper Engine](https://steamcommunity.com/app/431960)这个神器，我们可以把自己的网页发布到创意工坊，供全球网友们作为壁纸下载，是不是成就感瞬间up。那就来看看如何做到吧~
-
+<!-- more -->
 ```
 _______oBBBBB8o______oBBBBBBB 
 _____o8BBBBBBBBBBB__BBBBBBBBB8________o88o, 
@@ -27,7 +30,7 @@ _________________8BBBBBBBBBBBBBBBo,
 __________________BBBBBBBBBBBBBBB8, 
 __________________BBBBBBBBBBBBBBBB,
 ```
-<!-- more -->
+
 开发之前要明确我们需要抽出那些自定义功能，就以上一篇文章的css字画符为例吧。
 
 我们需要给用户提供自定义文本内容、背景颜色、内容缩放、布局方式、字体大小、字体家族，以及一些已配置好的预设，最终发布后的效果如下图。

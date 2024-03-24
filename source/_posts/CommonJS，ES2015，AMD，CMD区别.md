@@ -3,7 +3,6 @@ title: CommonJS，ES2015，AMD，CMD区别
 date: 2018-07-11 16:51:00
 categories:
   - [技术, 前端]
-tags:
 ---
 
 本文你将学到:

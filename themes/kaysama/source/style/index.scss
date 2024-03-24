@@ -5,6 +5,10 @@
 @import "_partial/article";
 @import "bootstrap_ported";
 
+html {
+  overflow: scroll;
+}
+
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;

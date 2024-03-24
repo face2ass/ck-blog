@@ -1,7 +1,10 @@
 ---
 title: 原生js+WebGL实现3D图片效果
 date: 2020-02-08 21:55:00
+categories:
+  - [技术, 前端]
 tags:
+  - WebGL
 ---
 
 海外党玩F***book的时候可能有接触过这个酷炫的3d图片效果：

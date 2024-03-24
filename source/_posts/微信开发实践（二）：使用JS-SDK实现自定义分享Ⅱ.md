@@ -1,7 +1,10 @@
 ---
 title: 微信开发实践（二）：使用JS-SDK实现自定义分享Ⅱ
 date: 2017-09-15 17:18:00
+categories:
+  - [技术]
 tags:
+  - 微信
 ---
 为了快速帮大家理解，这次的demo就直接修改公众号官网的[示例代码](http://203.195.235.76/jssdk/)来给大家演示。如果大家不想听我啰嗦，可以直接移步官方文档——[https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1421141115](https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1421141115)。
 <!-- more -->

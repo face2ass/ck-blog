@@ -1,7 +1,10 @@
 ---
 title: 纯css实现gif动图生成字画符
 date: 2020-07-19 12:01:00
+categories:
+  - [技术, 前端]
 tags:
+  - Css
 ---
 
 之前有一篇博客试过使用 [JavaScript生成字符画](https://my.oschina.net/codingDog/blog/1845658)，但是最终没有实现gif转字画符，事实上用当时说的方法：把gif每帧抽取出来，然后绘制到canvas上即可。

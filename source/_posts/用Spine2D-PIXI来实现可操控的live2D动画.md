@@ -1,7 +1,11 @@
 ---
 title: 用Spine2D+PIXI来实现可操控的live2D动画
 date: 2021-03-01 00:04:00
+categories:
+  - [技术, 前端]
 tags:
+  - Spine2D
+  - Pixi
 ---
 
 vTuber行业越来越火爆，看着那些形形色色的皮套，忍不住自己实现一遍的冲动，说起2D骨骼动画软件，Spine2D首当其冲。这次就用它来耍一耍。

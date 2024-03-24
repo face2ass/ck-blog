@@ -1,7 +1,10 @@
 ---
 title: 如何优雅地在Windows上使用Nginx
 date: 2017-07-23 17:27:00
+categories:
+  - [技术, 后端]
 tags:
+  - Nginx
 ---
 Nginx是一个非常好用的HTTP和反向代理服务器，但是如果你在开发过程中严重依赖nginx，频繁修改配置文件，是不是觉得每次双击nginx.exe，任务管理器中结束进程 的方式效率又低又土？今天我们就用更geek的方式来操作nginx——将其安装位为windows服务。
 <!-- more -->

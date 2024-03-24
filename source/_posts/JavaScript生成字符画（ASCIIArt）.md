@@ -1,7 +1,10 @@
 ---
 title: JavaScript生成字符画（ASCIIArt）
 date: 2018-07-13 08:23:00
+categories:
+  - [技术, 前端]
 tags:
+  - Canvas
 ---
 
 今天玩一些新的东西，大家都没有看过这样的视频：

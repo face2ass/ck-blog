@@ -1,7 +1,10 @@
 ---
 title: X96max+刷slimbox固件（救砖）
 date: 2021-02-04 14:12:00
+categories:
+  - [日常]
 tags:
+  - 刷机
 ---
 
 为什么要刷slimbox？

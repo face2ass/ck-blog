@@ -1,7 +1,8 @@
 ---
 title: 弹弹play离线查看B站大会员弹幕
 date: 2021-01-23 16:52:00
-tags:
+categories:
+  - [日常]
 ---
 
 首先下载视频资源，安装[弹弹play](https://www.dandanplay.com/)。

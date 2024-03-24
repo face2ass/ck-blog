@@ -1,7 +1,11 @@
 ---
 title: （译）stackoverflow上关于柱形全景与立方体全景转换的讨论
 date: 2017-07-27 01:30:00
+categories:
+  - [技术, 前端]
 tags:
+  - ThreeJs
+  - 全景
 ---
 # 提问：
 
@@ -33,7 +37,7 @@ tags:
 
 转换后
 
-![]((/images/stackoverflow_panorama_2.jpg))
+![](/images/stackoverflow_panorama_2.jpg)
 
 通过这两张图可以看出立方体映射是如何映射的。
 

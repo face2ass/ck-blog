@@ -1,7 +1,10 @@
 ---
 title: 前端实现旗帜飘动效果系列(Ⅱ)：canvas2D实现（1）
 date: 2018-07-03 04:40:00
+categories:
+   - [技术, 前端]
 tags:
+   - Canvas
 ---
 
 这里是本系列的第二讲，[上一讲](https://my.oschina.net/codingDog/blog/1839097)不知道大家自己试过了没，虽然整体效果差强人意但是并不算完美。本讲我们先用那个canvas2D把上一讲的效果实现一遍。

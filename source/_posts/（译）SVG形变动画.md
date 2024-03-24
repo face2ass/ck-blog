@@ -1,7 +1,10 @@
 ---
 title: （译）SVG形变动画
 date: 2018-09-18 21:50:00
+categories:
+  - [技术, 前端]
 tags:
+  - Svg
 ---
 虽然使用CSS给SVG添加动画很方便，但是并非所有可以动的svg属性都能通过CSS来设置动画，就比如所有定义元素实际形状的属性，你可以通过[SMIL（Synchronized Multimedia Integration Language）](https://developer.mozilla.org/en-US/docs/Web/SVG/SVG_animation_with_SMIL)为它们设置动画，都无法通过CSS来做到。Sara Soueidan在她的[SMIL动画指南](https://css-tricks.com/guide-svg-animations-smil/)中对此进行了介绍，
 
