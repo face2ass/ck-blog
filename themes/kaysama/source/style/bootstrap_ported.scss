@@ -1,4 +1,7 @@
 // 从bootstrap移植
+:root {
+  --bs-breadcrumb-font-size: 14px;
+}
 
 .bd-placeholder-img {
   font-size: 1.125rem;
@@ -75,4 +78,8 @@
 
 .bd-mode-toggle .dropdown-menu .active .bi {
   display: block !important;
+}
+
+.breadcrumb {
+  --bs-breadcrumb-margin-bottom: 0.4rem;
 }

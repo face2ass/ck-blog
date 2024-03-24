@@ -82,6 +82,88 @@ hexo.extend.filter.register('after_post_render', function (data) {
   return data
 })
 
-// function myCustomFilterFunction(args) {
-//   console.log('■myCustomFilterFunction', args)
-// }
+hexo.extend.helper.register('category_breadcrumb', function (page) {
+  const path = page.base
+  const url_for = this.url_for
+  const pathStrArr = path.split('/').filter((p, i) => {
+    return i > 0 && p
+  })
+  const pathArr = pathStrArr.map((p, i) => {
+    return {
+      label: p,
+      link: url_for(`categories/${pathStrArr.slice(0, i + 1).join('/')}`)
+    }
+  })
+  console.log('pathArr：', pathArr)
+  return `
+  <nav>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a class="link-body-emphasis" href="${url_for('/')}">
+          <svg class="bi" width="16" height="16"><use xlink:href="#house-door-fill"></use></svg>
+        </a>
+      </li>
+      ${pathArr.map((p, i) => `
+        <li class="breadcrumb-item ${i === pathArr.length - 1 ? 'active' : ''}">
+          <a class="link-body-emphasis fw-semibold text-decoration-none" href="${p.link}">${p.label}</a>
+        </li>
+      `)}
+    </ol>
+  </nav>
+`
+})
+
+// <% if (post.categories.length){ %>
+// <nav style="--bs-breadcrumb-divider: '>';">
+//     <ol class="breadcrumb">
+//     <% post.categories.each(function(cat, index){ %>
+//     <li class="breadcrumb-item <%- index === post.categories.length - 1 ? 'active' : '' %>"><%- cat.name %></li>
+//       <% }) %>
+//     </ol>
+// </nav>
+//   <% } %>
+hexo.extend.helper.register('article_category_breadcrumb', function (post) {
+  const categories = post.categories
+  if(categories.length) {
+    return `
+    <nav style="--bs-breadcrumb-divider: '>';">
+      <ol class="breadcrumb">
+      ${categories.map((cat, index) => {
+        return `<li class="breadcrumb-item ${index === categories.length - 1 ? 'active' : ''}">${cat.name}</li>`
+      })}
+      </ol>
+    </nav>
+    `
+  }
+  else {
+    return ''
+  }
+  const path = page.base
+  const url_for = this.url_for
+  const pathStrArr = path.split('/').filter((p, i) => {
+    return i > 0 && p
+  })
+  const pathArr = pathStrArr.map((p, i) => {
+    return {
+      label: p,
+      link: url_for(`categories/${pathStrArr.slice(0, i + 1).join('/')}`)
+    }
+  })
+  console.log('pathArr：', pathArr)
+  return `
+  <nav>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a class="link-body-emphasis" href="${url_for('/')}">
+          <svg class="bi" width="16" height="16"><use xlink:href="#house-door-fill"></use></svg>
+        </a>
+      </li>
+      ${pathArr.map((p, i) => `
+        <li class="breadcrumb-item ${i === pathArr.length - 1 ? 'active' : ''}">
+          <a class="link-body-emphasis fw-semibold text-decoration-none" href="${p.link}">${p.label}</a>
+        </li>
+      `)}
+    </ol>
+  </nav>
+`
+})

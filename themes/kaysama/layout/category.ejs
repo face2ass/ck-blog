@@ -1,2 +1,5 @@
-<%# partial('_partial/archive', {pagination: config.category, index: true, type: 'category'}) %>
-<h1>这是分类页</h1>
+<%- category_breadcrumb(page) %>
+<%# 文章摘要列表 %>
+<%- partial('_partial/article-list.ejs', {type: 'category'}) %>
+<%# 分页 %>
+<%- partial('_partial/article-list-pager.ejs', {type: 'category'}) %>
