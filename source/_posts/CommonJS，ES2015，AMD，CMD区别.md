@@ -13,9 +13,9 @@ tags:
 3.  ES6 模块与 CommonJS 模块的区别
 4.  模块演进的产物 —— Tree Shaking
 5.  Tree Shaking 应该注意什么
-
-本文所有例子都存放于 [https://github.com/hua1995116/packaging-example](https://github.com/hua1995116/packaging-example)
 <!-- more -->
+本文所有例子都存放于 [https://github.com/hua1995116/packaging-example](https://github.com/hua1995116/packaging-example)
+
 ## 引言
 
 今天在使用 rollup 打包的时候遇到了一个问题

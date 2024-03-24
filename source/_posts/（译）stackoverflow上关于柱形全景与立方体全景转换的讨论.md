@@ -29,11 +29,11 @@ tags:
 
 很难说清楚这些命令里面用了哪些算法。我们可以通过一张正方形网格图片看看程序做了什么操作（译者注：有点拗口不好翻，大概就这意思）。我用[维基上的一张网格图](https://commons.wikimedia.org/wiki/File:Mesh_size_64X64.jpg)来示例。
 
-![grid Mesh 64 x 64](https://static.oschina.net/uploads/space/2017/0903/140912_YWia_1389094.jpg)
+![grid Mesh 64 x 64](/images/stackoverflow_panorama_1.jpg)
 
 转换后
 
-![](https://static.oschina.net/uploads/space/2017/0903/141215_BLPV_1389094.jpg)
+![]((/images/stackoverflow_panorama_2.jpg))
 
 通过这两张图可以看出立方体映射是如何映射的。
 
@@ -191,11 +191,11 @@ projection函数接收theta和phi两个参数并返回其投影在球体上的�
 
 cubeToImg函数接收一个包含xyz坐标的元组和立方体边长输出到图片坐标系中
 
-[![](https://static.oschina.net/uploads/space/2017/0903/153016_rufT_1389094.jpg)](https://static.oschina.net/uploads/space/2017/0903/153016_rufT_1389094.jpg)
+[![](/images/stackoverflow_panorama_3.jpg)](https://static.oschina.net/uploads/space/2017/0903/153016_rufT_1389094.jpg)
 
 网上找了一张全景图，用上面的算法对其进行转换以后，得到了正确的形状：
 
-[![](https://static.oschina.net/uploads/space/2017/0903/153331_1jex_1389094.png)](https://static.oschina.net/uploads/space/2017/0903/153331_1jex_1389094.png)
+[![](/images/stackoverflow_panorama_4.png)](/images/stackoverflow_panorama_4.png)
 
 好像只有大部分的线是铺对的，又一部分图像没有任何像素，这是因为像素投影没有一 一对应，我们需要再做一次逆转换。先在源图像上遍历每个像素，然后在目标图像上找到每个对应的点。接着遍历目标图像，在对应的原图像上找到最近的像素。
 
@@ -287,7 +287,7 @@ imgOut.show()
 
 重新生成后的结果：
 
-[![](https://static.oschina.net/uploads/space/2017/0903/155030_lncu_1389094.png)](https://static.oschina.net/uploads/space/2017/0903/155030_lncu_1389094.png)
+[![](/images/stackoverflow_panorama_5.png)](/images/stackoverflow_panorama_5.png)
 
 英文好的可以看原文：[https://stackoverflow.com/questions/29678510/convert-21-equirectangular-panorama-to-cube-map](https://stackoverflow.com/questions/29678510/convert-21-equirectangular-panorama-to-cube-map)，有翻译上的问题欢迎指出。
 

@@ -7,12 +7,12 @@ tags:
 > 本来打算用原生WebGL来实现，但是水平有限，关于WebGL能讲的干货并不多，而且繁琐的准备工作对没有了解过的小伙伴也过于枯燥乏味，于是干脆用已经封装好大部分底层细节的PixiJS来实现了。
 
 相信很多前端在做一些活动页面的时候都碰到过扫光效果的需求，有很多dom+css的奇技淫巧可以做到，比如
-
+<!-- more -->
 ①直接用一个光照图片从原图上飞过，用加了overflow:hidden 的元素限制显示区域。
 ②把一张已经渲染出光照的图片盖在原图上，通过css的clip方法来裁剪出光照区域。
 ③简单粗暴地使用 序列帧/gif/视频 来完成动画。
 ④使用css的filter滤镜来添加高光。
-<!-- more -->
+
 当然基于①、②、③的原理，在canvas2D上也能方便地实现个功能。
 
 虽然，但是，精zuan益niu求jiao精jian的我肯定不能满足于这些小打小闹的实现方式，图像处理自然shader就可以排上用场了。
@@ -136,8 +136,8 @@ void main(void)
 
 最终效果如下：
 
-![](https://oscimg.oschina.net/oscnet/up-d850bf8bd86352093a4342f0580cf9bd277.gif)
+![](/images/pixi_shader_1.gif)
 
-![](https://static.oschina.net/uploads/space/2017/0630/180033_T7KY_1389094.png)[完整代码戳这里](https://gitee.com/kaysama/blog-source-host/tree/master/PixiJS+%E8%87%AA%E5%AE%9A%E4%B9%89Shader%E5%AE%9E%E7%8E%B0%E5%9B%BE%E7%89%87%E6%89%AB%E5%85%89%E6%95%88%E6%9E%9C)
+![](/images/hand.webp)[完整代码戳这里](https://gitee.com/kaysama/blog-source-host/tree/master/PixiJS+%E8%87%AA%E5%AE%9A%E4%B9%89Shader%E5%AE%9E%E7%8E%B0%E5%9B%BE%E7%89%87%E6%89%AB%E5%85%89%E6%95%88%E6%9E%9C)
 
-![](https://static.oschina.net/uploads/space/2017/0630/180033_T7KY_1389094.png)[在线演示1](http://kaysama.gitee.io/blog-source-host/PixiJS+%E8%87%AA%E5%AE%9A%E4%B9%89Shader%E5%AE%9E%E7%8E%B0%E5%9B%BE%E7%89%87%E6%89%AB%E5%85%89%E6%95%88%E6%9E%9C/) 、[在线演示2](https://codepen.io/oj8kay/pen/ZEeQOQb)
+![](/images/hand.webp)[在线演示1](http://kaysama.gitee.io/blog-source-host/PixiJS+%E8%87%AA%E5%AE%9A%E4%B9%89Shader%E5%AE%9E%E7%8E%B0%E5%9B%BE%E7%89%87%E6%89%AB%E5%85%89%E6%95%88%E6%9E%9C/) 、[在线演示2](https://codepen.io/oj8kay/pen/ZEeQOQb)

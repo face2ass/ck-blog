@@ -69,10 +69,10 @@ for (const { ele, inEnter, inLeave, outEnter, outLeave } of animeList) {
 }
 ```
 
-![](https://oscimg.oschina.net/oscnet/up-737272529ec9db6d5ea076175e05f686b15.gif)
+![](/images/scroll_anime.gif)
 
 css变量的兼容性：[https://caniuse.com/css-variables](https://caniuse.com/css-variables)
 
-![](https://static.oschina.net/uploads/space/2017/0630/180033_T7KY_1389094.png)[完整代码戳这里](https://gitee.com/kaysama/blog-source-host/tree/master/css%E5%8F%98%E9%87%8F%E5%AE%9E%E7%8E%B0%E6%BB%9A%E5%8A%A8%E6%9D%A1%E6%8E%A7%E5%88%B6%E5%8A%A8%E7%94%BB)
+![](/images/hand.webp)[完整代码戳这里](https://gitee.com/kaysama/blog-source-host/tree/master/css%E5%8F%98%E9%87%8F%E5%AE%9E%E7%8E%B0%E6%BB%9A%E5%8A%A8%E6%9D%A1%E6%8E%A7%E5%88%B6%E5%8A%A8%E7%94%BB)
 
-![](https://static.oschina.net/uploads/space/2017/0630/180033_T7KY_1389094.png)[在线演示1](https://kaysama.gitee.io/blog-source-host/css%E5%8F%98%E9%87%8F%E5%AE%9E%E7%8E%B0%E6%BB%9A%E5%8A%A8%E6%9D%A1%E6%8E%A7%E5%88%B6%E5%8A%A8%E7%94%BB/)、[在线演示2](https://codepen.io/oj8kay/pen/WNdQrWP)
+![](/images/hand.webp)[在线演示1](https://kaysama.gitee.io/blog-source-host/css%E5%8F%98%E9%87%8F%E5%AE%9E%E7%8E%B0%E6%BB%9A%E5%8A%A8%E6%9D%A1%E6%8E%A7%E5%88%B6%E5%8A%A8%E7%94%BB/)、[在线演示2](https://codepen.io/oj8kay/pen/WNdQrWP)

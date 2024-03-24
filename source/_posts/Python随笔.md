@@ -10,9 +10,9 @@ tags:
 Python的windows包：http://www.lfd.uci.edu/~gohlke/pythonlibs/#mysql-python
 
 python3.4安装mysql依赖：
-
-安装mysql-connector for python3.4：http://dev.mysql.com/downloads/connector/python/
 <!-- more -->
+安装mysql-connector for python3.4：http://dev.mysql.com/downloads/connector/python/
+
 下载mysqlclient预编译文件：http://www.lfd.uci.edu/~gohlke/pythonlibs/#mysqlclient
 
 升级pip：python -m pip install --upgrade pip
@@ -320,7 +320,7 @@ http://blog.csdn.net/wanghai__/article/details/6926428
 
 
 
-![](python.webp)
+![](/images/python.webp)
 
 表示apply是一个关键字
 

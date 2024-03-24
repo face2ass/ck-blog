@@ -10,10 +10,10 @@ chrome浏览器安装扩展：[B站bilibil弹幕下载生成ASS字幕](https://c
 
 打开会员视频，点击“开始下载弹幕”
 <!-- more -->
-![](https://oscimg.oschina.net/oscnet/up-f4d4780163eaf8563ac0e67e38e3ff75c8f.png)
+![](/images/dandanplay_1.png)
 
 现在玩ass字幕文件后，打开[弹幕盒子ass字幕转xml](https://danmubox.gitee.io/convert)功能
 
 转换为xml文件后使用弹弹play播放视频。依次点击“弹幕列表->添加更多弹幕->加载本地弹幕文件”，选择下载的xml文件后确定即可
 
-![](https://oscimg.oschina.net/oscnet/up-8ef9462be0f41875ebd4deddbccca5bc3e3.png)
+![](/images/dandanplay_2.png)

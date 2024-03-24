@@ -42,7 +42,7 @@ npm init vite@latest sync-site --template vue
 
 ②删除components目录和其他.vue后缀的文件
 
-![](https://oscimg.oschina.net/oscnet/up-cb4de77e2943127256abe8e9bc3b36e1468.png)
+![](/images/vite_sync.png)
 
 ③vite.config.js移除vue相关代码
 
@@ -500,4 +500,4 @@ ps：
 
 base鉴权退出登录只要接口返回401即可
 
-![](https://static.oschina.net/uploads/space/2017/0630/180033_T7KY_1389094.png)[完整代码戳这里](https://gitee.com/kaysama/blog-source-host/tree/master/WebSocket%E8%B7%A8%E7%AB%AF%E5%86%85%E5%AE%B9%E5%90%8C%E6%AD%A5)
+![](/images/hand.webp)[完整代码戳这里](https://gitee.com/kaysama/blog-source-host/tree/master/WebSocket%E8%B7%A8%E7%AB%AF%E5%86%85%E5%AE%B9%E5%90%8C%E6%AD%A5)

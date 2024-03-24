@@ -8,7 +8,7 @@ tags:
    - Web Audio
 ---
 
-> 这篇博客的灵感源头是B站的这个魔性视频：BV1uL411g7Yg，突然想写个高田熊打PP的音乐可视化页面
+> 这篇博客的灵感源头是B站的这个魔性视频：[「 高田熊 」 跟 着 节 奏，一 起 摇 摆 ~ | takadabear](https://www.bilibili.com/video/BV1uL411g7Yg)，突然想写个高田熊打PP的音乐可视化页面
 
 这个页面使用的软件、框架、技术主要有：录屏工具、Photoshop、[TexturePacker](https://www.codeandweb.com/texturepacker)、[PixiJS](https://pixijs.com/)、[Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Best_practices)
 <!-- more -->
@@ -179,6 +179,10 @@ $audio.addEventListener('play', e => {
 })
 ```
 
-**第三个重点**与音频无关，不过也值得说一说。工作中我们经常会碰到给一批元素力量添加“动态样式属性”的需求，何为“动态样式属性”，就是属性值在运行期间才能计算出来，比如根据屏幕尺寸计算每个元素的宽度。一般来说有以下几种常用的方式，①遍历元素直接设置行内样式；②使用css变量；③可枚举的情况下预设一些class，比如有一系列class名为size-10、size-20、size-30....，动态修改class即可；这里用的就是第④种比较小众的写法，直接插入样式表规则（CSSStyleSheet: insertRule）
+**第三个重点**与音频无关，不过也值得说一说。工作中我们经常会碰到给一批元素力量添加“动态样式属性”的需求，何为“动态样式属性”，就是属性值在运行期间才能计算出来，比如根据屏幕尺寸计算每个元素的宽度。一般来说有以下几种常用的方式：
+①遍历元素直接设置行内样式；
+②使用css变量；
+③可枚举的情况下预设一些class，比如有一系列class名为size-10、size-20、size-30....，动态修改class即可；
+④这里用的就是一种小众的写法，直接插入样式表规则（CSSStyleSheet: insertRule）
 
 参考：[Using the Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Using_Web_Audio_API)

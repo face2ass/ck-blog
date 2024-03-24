@@ -7,12 +7,12 @@ tags:
 > 文章里面的东西虽然涉及了人工智能，但是还是选择投在了前端的版块，一来延续上一遍的内容，二来自己对AI这块连入门都算不上，避免被众大佬嗤笑，但是也欢迎大佬们说出里面的纰漏和不严谨的地方，3Q   (〃'▽'〃)
 
 上个教程讲了深度贴图的其中一个应用——生成3D效果的图片。这篇文章称热打铁，说下如何获取深度贴图吧。
-
-如果你用过Unity、UE等游戏引擎或者Blender、Maya等三维制作软件，获取一个场景的深度贴图应该不是问题，鄙人没玩过这些，这里只说一下只有一张图片如何获取深度贴图。
 <!-- more -->
+如果你用过Unity、UE等游戏引擎或者Blender、Maya等三维制作软件，获取一个场景的深度贴图应该不是问题，鄙人没玩过这些，这里只说一下只有一张图片如何获取深度贴图。
+
 假设你用支持拍摄出带深度信息的设备获取了一张文件后缀是heic的图片，可以在mac电脑中用PS打开，然后切换套通道标签，就能看到除RGB外的另一个通道，这个就是D通道（也有叫景深通道的）。因为ps打开heic文件需要硬件解码，所以得系统支持，windows应该是暂时没有这类驱动。
 
-如果你是windows系统的电脑，可以使用一个叫[StereoPhoto Maker](http://stereo.jpn.org/eng/stphmkr/index.html)的工具来解压出heic文件中的隐藏数据。就是这个工具：![](https://oscimg.oschina.net/oscnet/up-e9c2a00ed932d59f34bf206a5bd7a14f1af.png)
+如果你是windows系统的电脑，可以使用一个叫[StereoPhoto Maker](http://stereo.jpn.org/eng/stphmkr/index.html)的工具来解压出heic文件中的隐藏数据。就是这个工具：![](/images/depth_map_1.png)
 
 如果你只有一张普通的图片，可以使用ps手动绘制出深度贴图，网上有很多教程，直接去油管搜“3d photo ps”这几个关键字就有一堆视频教你如何制作。
 
@@ -48,11 +48,11 @@ tags:
 5. 在新页面点击上面的文件名可以修改名称
 6. 点击 编辑 -\> 笔记本设置，修改参数如图：
 
-   ![](https://oscimg.oschina.net/oscnet/up-1781d2bbe46551298d231229a711377fcba.png)
+   ![](/images/depth_map_2.png)
 
 7. 保存后装载谷歌云盘
 
-   ![](https://oscimg.oschina.net/oscnet/up-ac9ba6f43672a24081cf7e7f3721897df87.png)
+   ![](/images/depth_map_3.png)
 
 8. 输入以下代码并运行：
 
@@ -63,11 +63,11 @@ tags:
 
    第一行进入工程目录，第二行执行脚本
 
-   ![](https://oscimg.oschina.net/oscnet/up-5ecde96937bd8937b8390d557d5d7ec73c0.png)
+   ![](/images/depth_map_4.png)
 
 出现这个字样表示执行完毕，这时候就可以去谷歌云盘，到**“我的云端硬盘 / 2dtodepth / outfile”**目录下把文件下载下来啦
 
-![](https://oscimg.oschina.net/oscnet/up-adf1ba7d4a83871a500695a25cc3b6a03d5.png)
+![](/images/depth_map_5.png)
 
 这个程序的成功率要具体看你的图片，大部分图还是会有一些瑕疵，可以自己去PS修一修。
 

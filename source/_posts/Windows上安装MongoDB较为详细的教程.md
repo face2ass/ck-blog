@@ -8,9 +8,9 @@ tags:
 ---
 
 > 先前写了一篇关于 MongoDB 聚合查询的博文，里面的实验一直使用的是公司搭建好的 Mongo 环境，作为一个还未入门的新手，学会自己搭建运行环境还是相当必要的，既方便测试，也能更深入的了解 Mongo。
-
-*ps：开始教程前要先注意一下自己的 Windows 版本，MongoDB 从 2.2 版本开始就不再支持 Windows XP*
 <!-- more -->
+*ps：开始教程前要先注意一下自己的 Windows 版本，MongoDB 从 2.2 版本开始就不再支持 Windows XP*
+
 
 # 安装 MongoDB
 1. 首先，从官网下载 [MongoDB](https://www.oschina.net/action/GoToLink?url=http%3A%2F%2Fwww.mongodb.org%2Fdownloads) ，安装包有 zip 和 msi 格式，两者没太大区别，msi 其实就是自动解压缩而已，安装目录就是解压缩目录，默认解压到 C:\mongodb。要说两者的区别就是.msi 可以用来升级已安装的旧版本。我这里选择解压 / 安装到 **D:\MongoDB**（Windows 的文件系统记录但不区分大小写）；
@@ -19,7 +19,7 @@ tags:
 4. 启动 MongoDB 服务：**D:\MongoDB\Server\3.0\bin\mongod --dbpath D:\MongoData\db**，（如果 dbpath 存在空格，则需要加英文半角双引号，--dbpath "D:\MongoData\mongo db data"）；
 5. 进入 MongoDB 的 bash：另起一个 CMD 窗口，执行 **D:\MongoDB\Server\3.0\bin\mongo** （如果设置了环境变量，直接输入 mongo 即可）；
 6. 出现下图表示可以开始使用 MongoDB 了。
-![](cmd.webp)
+![](/images/cmd.webp)
 
 
 # 配置 MongoDB

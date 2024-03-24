@@ -8,10 +8,10 @@ tags:
 
 ####  首先画一张“九宫格”树状图
 
-![](https://oscimg.oschina.net/oscnet/up-6f43a7ff200770f2469987ba576dc2a3d0c.png)
-
 觉得不好看可以自己画，只要包含这11种状态：首部、中部、尾部的叶子节点，首部、中部、尾部的非叶子节点以及每个节点的展开/收起状态，根节点的展开/收起状态。
 <!-- more -->
+![](/images/jquery_tree_1.png)
+
 #### 接下来写一个jQuery插件
 
 最简单的插件格式如下：
@@ -56,7 +56,7 @@ OK，基本结构搞定，其他的细枝末节就放到源码里了。
 
 **树状图：**
 
-![](https://oscimg.oschina.net/oscnet/up-83703f38afeb565f5cf6fc736f2e078ceb4.png)
+![](/images/jquery_tree_2.png)
 
 **Markdown：**
 
@@ -133,6 +133,6 @@ OK，基本结构搞定，其他的细枝末节就放到源码里了。
      └── 脊椎动物
 ```
 
-![](https://static.oschina.net/uploads/space/2017/0630/180033_T7KY_1389094.png)[完整代码戳这里](https://gitee.com/kaysama/blog-source-host/tree/master/jQuery%E6%A0%91%E6%8E%A7%E4%BB%B6)
+![](/images/hand.webp)[完整代码戳这里](https://gitee.com/kaysama/blog-source-host/tree/master/jQuery%E6%A0%91%E6%8E%A7%E4%BB%B6)
 
-![](https://static.oschina.net/uploads/space/2017/0630/180033_T7KY_1389094.png)[在线演示](http://kaysama.gitee.io/blog-source-host/jQuery%E6%A0%91%E6%8E%A7%E4%BB%B6/)
+![](/images/hand.webp)[在线演示](http://kaysama.gitee.io/blog-source-host/jQuery%E6%A0%91%E6%8E%A7%E4%BB%B6/)

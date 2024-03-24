@@ -12,7 +12,7 @@ tags:
 
 两个方法的效果图如下
 
-![](https://oscimg.oschina.net/oscnet/472d8d24fcbd827f664a04b93bd5f11ea13.jpg)
+![](/images/canvas_flag_1.jpg)
 
 这是方法一的代码，我只贴出修改的部分（// +++ 之间）：
 
@@ -44,9 +44,9 @@ var tick = function () {
 }
 ```
 
-![](https://static.oschina.net/uploads/space/2017/0630/180033_T7KY_1389094.png)[完整代码戳这里](https://gitee.com/kaysama/codes/g8smhrdx73fknyu5wv61l63)
+![](/images/hand.webp)[完整代码戳这里](https://gitee.com/kaysama/codes/g8smhrdx73fknyu5wv61l63)
 
-![](https://static.oschina.net/uploads/space/2017/0630/180033_T7KY_1389094.png)Demo：See the Pen [flag waving by canvas2d(rect)](https://codepen.io/oj8kay/pen/XBrmVy)  by Kay ([@oj8kay](https://codepen.io/oj8kay)) on [CodePen](https://codepen.io/).
+![](/images/hand.webp)Demo：See the Pen [flag waving by canvas2d(rect)](https://codepen.io/oj8kay/pen/XBrmVy)  by Kay ([@oj8kay](https://codepen.io/oj8kay)) on [CodePen](https://codepen.io/).
 
 方法二的核心代码如下：
 
@@ -89,21 +89,21 @@ var tick = function () {
 
 这个方法做出的另外一点修改是，由于操作是对画布逐像素进行的，包括透明元素，所以既不用clearRect，也不用对Y轴进行偏移。
 
-![](https://static.oschina.net/uploads/space/2017/0630/180033_T7KY_1389094.png)[完整代码戳这里](https://gitee.com/kaysama/blog-source-host/tree/master/%E5%89%8D%E7%AB%AF%E5%AE%9E%E7%8E%B0%E6%97%97%E5%B8%9C%E9%A3%98%E5%8A%A8%E6%95%88%E6%9E%9C%E7%B3%BB%E5%88%97/canvas2D%E5%AE%9E%E7%8E%B0-2)
+![](/images/hand.webp)[完整代码戳这里](https://gitee.com/kaysama/blog-source-host/tree/master/%E5%89%8D%E7%AB%AF%E5%AE%9E%E7%8E%B0%E6%97%97%E5%B8%9C%E9%A3%98%E5%8A%A8%E6%95%88%E6%9E%9C%E7%B3%BB%E5%88%97/canvas2D%E5%AE%9E%E7%8E%B0-2)
 
-![](https://static.oschina.net/uploads/space/2017/0630/180033_T7KY_1389094.png)[Demo1](http://kaysama.gitee.io/blog-source-host/%E5%89%8D%E7%AB%AF%E5%AE%9E%E7%8E%B0%E6%97%97%E5%B8%9C%E9%A3%98%E5%8A%A8%E6%95%88%E6%9E%9C%E7%B3%BB%E5%88%97/canvas2D%E5%AE%9E%E7%8E%B0-2/)
+![](/images/hand.webp)[Demo1](http://kaysama.gitee.io/blog-source-host/%E5%89%8D%E7%AB%AF%E5%AE%9E%E7%8E%B0%E6%97%97%E5%B8%9C%E9%A3%98%E5%8A%A8%E6%95%88%E6%9E%9C%E7%B3%BB%E5%88%97/canvas2D%E5%AE%9E%E7%8E%B0-2/)
 
-![](https://static.oschina.net/uploads/space/2017/0630/180033_T7KY_1389094.png)Demo2：See the Pen [flag waving by canvas2d(pixel)](https://codepen.io/oj8kay/pen/RBrPEp)  by Kay ([@oj8kay](https://codepen.io/oj8kay)) on [CodePen](https://codepen.io/).
+![](/images/hand.webp)Demo2：See the Pen [flag waving by canvas2d(pixel)](https://codepen.io/oj8kay/pen/RBrPEp)  by Kay ([@oj8kay](https://codepen.io/oj8kay)) on [CodePen](https://codepen.io/).
 
 通过chrome dev tool对两个方法的性能进行分析：
 
 这是方法1的CPU占有率的变化：
 
-![](https://oscimg.oschina.net/oscnet/aaa919a8637c56ded9323f601d382aafff1.jpg)
+![](/images/canvas_flag_2.jpg)
 
 这是方法2的：
 
-![](https://oscimg.oschina.net/oscnet/eb50083a76fe0399bd766bbce7483ce6823.jpg)
+![](/images/canvas_flag_3.jpg)
 
 哪个性能更好显而易见。方法二的性能虽然差，但是它的好处是灵活性更大，你甚至可以任意改变“光源”的位置。
 

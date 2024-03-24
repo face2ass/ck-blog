@@ -6,11 +6,12 @@
 
   img {
     max-width: 90%;
-    height: auto;
+    max-height: 400px;
+    margin-right: 0.4rem;
   }
 
   blockquote {
-    padding: 0.8rem 0.8rem 0.8rem 0.4rem;
+    padding: 0.6rem 0.6rem 0.6rem 0.4rem;
     background-color: rgba(150, 150, 150, 0.15);
     border-left: 0.8rem solid rgba(150, 150, 150, 0.2);
     border-radius: var(--bs-border-radius);
@@ -19,8 +20,17 @@
       margin-bottom: 0;
     }
 
-    ul:last-child {
+    ul:last-child, ol:last-child {
       margin-bottom: 0;
+    }
+
+    a {
+      //color: var(--bs-link-hover-color);
+      opacity: 0.6;
+    }
+    // bootstrap 样式修改
+    &.blockquote {
+      font-size: 1.1rem;
     }
   }
 }

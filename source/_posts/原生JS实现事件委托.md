@@ -39,6 +39,6 @@ if (!Element.prototype.closest)
 
 那要兼容IE8怎么办？不会吧不会吧，阿sir，都0202年了，不会还有人用这款浏览器吧~
 
-![](https://oscimg.oschina.net/oscnet/up-d375136cd9ba27c9d1bf9eab30d14a210f7.gif)
+![](/images/delegation_1.gif)
 
 就写这些了，至于封装什么的，这种太小儿科的活我就不替大家操心了

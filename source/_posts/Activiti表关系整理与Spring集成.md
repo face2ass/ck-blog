@@ -9,18 +9,16 @@ tags:
 ---
 # 结构：
 
-![](activiti.webp)
-<!-- more -->
+![](/images/activiti.webp)
+
 ps：activiti5.16.3  依赖 spring4.x
-
-
 
 # 概念：
 
 部署对象 ——Deployment：一次部署的多个文件的信息，通常有 .jpdl.xml 和 .png 两个文件。删除流程定义其实删的就是部署对象
 
 流程定义 ——ProcessDefintion：解析 .jpdl.xml 后得到的流程的信息，其中包含流程中所有的环节和每个环节的详细信息等。查询流程相关信息其实就是查询流程定义
-
+<!-- more -->
 流程实例 ——ProcessInstance：
 
 Activiti 的持久化方式

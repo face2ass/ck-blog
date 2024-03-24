@@ -10,19 +10,19 @@ tags:
 
 解压缩阿里图标库下载的文件：
 <!-- more -->
-![](https://oscimg.oschina.net/oscnet/4e40b0235982bc9429494de264546c61aaf.jpg)
+![](/images/iconfont_1.jpg)
 
 对于前端来说，唯一觉得比较陌生的可能就是这一堆字体文件了，有些喜欢鼓捣操作系统字体的人可能会对一个ttf格式的文件有些眼熟，这不就是操作系统的字体文件么，那eot、woff、svg这些又是啥？前面两个同样也是字体文件，只是为了兼容不同的浏览器而额外引入的，svg严格来说与iconfont并无关系（既然有svg，虽然偏离主题，文章后面也会来讲一讲，因为svg能展开的东西很多我今后会专门写一篇来详细研究）。
 
 首先，我们来了解一下到底字体是如何在浏览器里被渲染出来的。光讲原理有些枯燥，网上也能找到一堆，我们先直观地来看看字体文件里面到底是啥玩意儿。首先，如果你是win10或win8用户，打开操作系统的字体文件目录：C:\\Windows\\Fonts\或C:\\Winnt\\Fonts，点击左侧的“查找字符”：
 
-![](https://oscimg.oschina.net/oscnet/0f680528c79b75247f36b2ea01ff9673fb9.jpg)
+![](/images/iconfont_2.jpg)
 
 或者准备一个软件：[FontForge](http://fontforge.github.io/en-US/downloads/)，这是一个开源的字体编辑器，下面我就用这个软件来深入。先打开操作系统中的字体文件目录，随便找一个字体文件，如：consola.ttf，拷到其他目录（可能会变成四个文件，分别是consola.ttf、consolab.ttf、consolai.ttf、consolaz，对应的是常规、加粗、斜体、斜体加粗）。
 
 用FontForge打开consola.ttf，无视警告，可以看到这样的一张表：
 
-![](https://oscimg.oschina.net/oscnet/e35911d36eb737636939035b4c1cd46f15d.jpg)
+![](/images/iconfont_3.jpg)
 
 可以猜得出来，字体文件其实就是一个以unicode作为索引的字形表。双击里面的某个字形，你可以对它进行编辑，也能猜得出来每个字形其实就是一个矢量图，因此ttf文件所表示的字库也叫矢量字库，说到这个再稍微提及一下另一种字库——点阵字库，两者最大的区别就是点阵字库可以在Console Mode（命令行模式）下被渲染出来，而矢量字库必须在Graphics Mode（图形模式）中被渲染。比如早期没有图形接口的dos系统或者某些linux终端，这些字体的索引需要靠固化到硬件驱动上点阵字库，因为早期的计算机只支持英文，这也是后来“汉卡”的由来。
 
@@ -34,11 +34,11 @@ tags:
 
 ## 为何有两个src？
 
->     绝大多数情况下，第一个 src 是可以去掉的，除非需要支持 IE9 下的兼容模式。在 IE9 中可以使用 IE7 和 IE8 的模式渲染页面，微软修改了在兼容模式下的 CSS 解析器，导致使用 ? 的方案失效。由于 CSS 解释器是从下往上解析的，所以在上面添加一个不带问号的 src 属性便可以解决此问题。
+> 绝大多数情况下，第一个 src 是可以去掉的，除非需要支持 IE9 下的兼容模式。在 IE9 中可以使用 IE7 和 IE8 的模式渲染页面，微软修改了在兼容模式下的 CSS 解析器，导致使用 ? 的方案失效。由于 CSS 解释器是从下往上解析的，所以在上面添加一个不带问号的 src 属性便可以解决此问题。
 
 ## #iefix有何作用？
 
->     IE9 之前的版本没有按照标准解析字体声明，当 src 属性包含多个 url 时，它无法正确的解析而返回 404 错误，而其他浏览器会自动采用自己适用的 url。因此把仅 IE9 之前支持的 EOT 格式放在第一位，然后在 url 后加上 ?，这样 IE9 之前的版本会把问号之后的内容当作 url 的参数。至于 #iefix 的作用，一是起到了注释的作用，二是可以将 url 参数变为锚点，减少发送给服务器的字符。
+> IE9 之前的版本没有按照标准解析字体声明，当 src 属性包含多个 url 时，它无法正确的解析而返回 404 错误，而其他浏览器会自动采用自己适用的 url。因此把仅 IE9 之前支持的 EOT 格式放在第一位，然后在 url 后加上 ?，这样 IE9 之前的版本会把问号之后的内容当作 url 的参数。至于 #iefix 的作用，一是起到了注释的作用，二是可以将 url 参数变为锚点，减少发送给服务器的字符。
 
 至于后面的src和一堆url主要是为了兼容不同的浏览器，format属性告诉浏览器这个字体的格式，可选的字体格式有 [woff](https://developer.mozilla.org/zh-CN/docs/WOFF)、woff2、truetype、opentype、embedded-opentype、svg。
 
@@ -76,11 +76,11 @@ html中&#xe869;其中&表示转义，#x可以用于表示16进制转义字符（
 
 那么我们如何才能知道我们字体文件中每个字形对应的是哪个unicode码呢？我们可以直接从下载的demo_unicode.html文件中找到该图标对应的16进制数：
 
-![](https://oscimg.oschina.net/oscnet/552a72dea10bc9ca4614642c78de7c5c5fd.jpg)
+![](/images/iconfont_4.jpg)
 
 如果你想对这个图形做一些修改，可以用fontForge打开字体文件，接着根据16进制数或者图标名字来定位到该图标：
 
-![](https://oscimg.oschina.net/oscnet/4eac43ca9e1448806099b49a10b657e0ddb.jpg)
+![](/images/iconfont_5.jpg)
 
 当在你在FontForge中修改了字形后，点击File->Generage Fonts.. 生成字体文件（记住每种格式导出一份），然后在font-face中修改文件的引用地址即可。
 

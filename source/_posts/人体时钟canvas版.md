@@ -2,11 +2,12 @@
 title: 人体时钟canvas版
 date: 2021-01-29 11:25:00
 tags:
+excerpt: 不知道老网民们还记不记得这个魔性的时钟插件：<br>作为网上冲浪十数载的网虫，不久前看到这个图瞬间破防，直接梦回10年前的QQ空间，感叹一下岁月蹉跎、时光荏苒、青春不在、不胜唏嘘....
 ---
 
 不知道老网民们还记不记得这个魔性的时钟插件：
 
-![](https://oscimg.oschina.net/oscnet/up-6edcb90414035e239232fe08d8302eab63e.gif)
+![](/images/honehoneclock.gif)
 
 作为网上冲浪十数载的网虫，不久前看到这个图瞬间破防，直接梦回10年前的QQ空间，感叹一下岁月蹉跎、时光荏苒、青春不在、不胜唏嘘....
 
@@ -288,6 +289,6 @@ tags:
 
 ```
 
-![](https://static.oschina.net/uploads/space/2017/0630/180033_T7KY_1389094.png)[完整代码戳这里](https://gitee.com/kaysama/blog-source-host/tree/master/%E4%BA%BA%E4%BD%93%E6%97%B6%E9%92%9F)
+![](/images/hand.webp)[完整代码戳这里](https://gitee.com/kaysama/blog-source-host/tree/master/%E4%BA%BA%E4%BD%93%E6%97%B6%E9%92%9F)
 
-![](https://static.oschina.net/uploads/space/2017/0630/180033_T7KY_1389094.png)[在线演示1](https://kaysama.gitee.io/blog-source-host/%E4%BA%BA%E4%BD%93%E6%97%B6%E9%92%9F)、[在线演示2](https://codepen.io/oj8kay/pen/JjbPvza)
+![](/images/hand.webp)[在线演示1](https://kaysama.gitee.io/blog-source-host/%E4%BA%BA%E4%BD%93%E6%97%B6%E9%92%9F)、[在线演示2](https://codepen.io/oj8kay/pen/JjbPvza)

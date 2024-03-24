@@ -9,16 +9,16 @@ tags:
 2. 官方更新频繁，对于爱高机的人来说，代表着有更多新鲜玩意；
 3. 原厂固件丑，不符合中国人的使用习惯大部分外贸盒子都是小厂，固件调教得都不大行，建议是能刷就都刷；
 4. 外贸盒子刷机方便。不用拆机找卡刷点，直接下载固件使用USB双公头线刷就行，救砖也容易，没啥心智负担
-
-下面开始正文：
 <!-- more -->
+下面开始正文：
+
 ❶首先去[slimbox官网](https://slimboxtv.ru/x96max-plus/)下载X96max+的固件，这时候你会依恋懵逼，明明自己的型号就是X96max+，怎么官网冒出来那么多版本，这一步下载正确的版本非常重要。如果你是亚马逊或ebay等正版渠道购买的，可以直接从设置->版次里看到机器的型号。
 
 如果你的来源是其他渠道，那光在系统里查看就不靠谱了，很有可能被黑心商家篡改，这时候你就得拆机看看你的PCB布局，然后根据布局判断你是哪个型号，这个网站有毛子大佬列出了每个型号对应的配置，可以去参考：[Обсуждение X96 Max Plus\[2\]. Модификации (S905X3)](https://4pda.to/forum/index.php?showtopic=1013103&st=40#entry102780026)
 
 这个网址是上面英文版的翻译，可以也一并参考一下：[Armbian for beginners of Amlogic TV Box – focus on X96 MAX+ S905X3](https://travis90x.altervista.org/x96-max-plus-anlogic-s905x3-armbian/?doing_wp_cron=1708709025.4282369613647460937500)
 
-![](https://oscimg.oschina.net/oscnet/up-21d69c3b80ad21bec5ba7593de89c523e8f.webp)
+![](/images/x96max_1.webp)
 
 ❷第一步型号判断正确了以后，后面就好办了，先把对应的固件下载下来，解压出img文件；
 
@@ -28,7 +28,7 @@ tags:
 
 ❺如果是救砖的话短接触点（触点见下图）或使用HDMI刷机神器（使用方式见上一篇博客：[给电子垃圾续命 —— 小米盒子 3c 刷精简版系统（救砖）](https://my.oschina.net/codingDog/blog/4939127)）
 
-![](https://oscimg.oschina.net/oscnet/up-4f603ed86307a04a88520686ec6d19b39b3.png)
+![](/images/x96max_2.png)
 
 ❻点击 “开始” 就开始刷机了，中途可能会失败，每次失败重复步骤❺多尝试几次就行。
 

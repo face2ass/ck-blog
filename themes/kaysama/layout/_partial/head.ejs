@@ -29,4 +29,7 @@
   <% } %>
   <%- css('bootstrap/bootstrap@5.3.3.min.css') %>
   <%- css('style/index') %>
+
+  <%# 放在head避免夜间模式屏幕在刷新时闪一下 %>
+  <%- js('js/color-modes.js') %>
 </head>

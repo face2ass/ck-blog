@@ -103,11 +103,11 @@ GM_xmlhttpRequest({
 
 # 使用本地编辑器开发
 
-![](https://oscimg.oschina.net/oscnet/up-014826f1466b8c99feef99e8b0f965cd2d2.png)![](https://oscimg.oschina.net/oscnet/up-3a0fdbed6605cef726e091ad890dc6c4a5e.png)![](https://oscimg.oschina.net/oscnet/up-0220507eded47ce93930e39676cad5d7adb.png)![](https://oscimg.oschina.net/oscnet/up-1eb377c59adb2f202cb95579d88d2557228.png)
+![](/images/tampermonkey_1.png)![](/images/tampermonkey_2.png)![](/images/tampermonkey_3.png)![](/images/tampermonkey_4.png)
 
 然后在脚本中使用require指令通过file协议引入本地的js，例如：
 
-![](https://oscimg.oschina.net/oscnet/up-ef3f20c930d71d12d74211db91f83c40fcf.png)
+![](/images/tampermonkey_5.png)
 
 最后，推荐几个非常好用的油猴脚本。
 

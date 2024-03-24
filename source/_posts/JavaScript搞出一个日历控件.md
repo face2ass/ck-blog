@@ -5,12 +5,12 @@ tags:
 ---
 
 日历控件基本上所有的前端都会用到，而且我相信8成的JSer都是直接把开源的组件拿来用，很多设计师似乎跟开发们也有默契，对日历控件只要能用就行，样式啥的不做太多要求，但是某些设计师就是有强迫症，一定要你按着TA的设计来，保不准产品也要舔一把火，往日历里塞些稀奇古怪的业务，咋办？初级开发可能就去网上找符合要求的控件，然后拼命说服他们；普通的开发就可能直接在已有的控件上修修补补，除了问题再回炉重造；高级的开发直接怼回去：什么J8需求，不接！顶级的程序员呢？当然是一言不合直接造轮子啊（笑。
-<!-- more -->
+
 先放最终效果，审美有限，将就着看吧~
 
-![](https://oscimg.oschina.net/oscnet/d8c659ca8f8847afac9a8a3b9bf6e236ea8.jpg)
+![](/images/calendar_1.jpg)
 先不管js或是jquery怎么写，咱先把日历的样子搭出来
-
+<!-- more -->
 html：
 
 ```html
@@ -298,7 +298,7 @@ body {
 
 最终呈现的效果见下图
 
-![](https://oscimg.oschina.net/oscnet/d8c659ca8f8847afac9a8a3b9bf6e236ea8.jpg)
+![](/images/calendar_1.jpg)
 
 重点来了——
 
@@ -566,6 +566,6 @@ function bindHandlers () {
 
 后面待补充的功能还有很多，面板定位，dom元素创建，触发事件，事件格式化，jquery封装，挖个坑先~
 
-![](https://static.oschina.net/uploads/space/2017/0630/180033_T7KY_1389094.png)[完整代码戳这里](https://gitee.com/kaysama/blog-source-host/tree/master/%E6%97%A5%E6%9C%9F%E9%80%89%E6%8B%A9%E5%99%A8)
+![](/images/hand.webp)[完整代码戳这里](https://gitee.com/kaysama/blog-source-host/tree/master/%E6%97%A5%E6%9C%9F%E9%80%89%E6%8B%A9%E5%99%A8)
 
-![](https://static.oschina.net/uploads/space/2017/0630/180033_T7KY_1389094.png)[在线演示一](http://kaysama.gitee.io/blog-source-host/%E6%97%A5%E6%9C%9F%E9%80%89%E6%8B%A9%E5%99%A8/index.html)、[在线演示二](https://codepen.io/oj8kay/pen/eoMMbz)
+![](/images/hand.webp)[在线演示一](http://kaysama.gitee.io/blog-source-host/%E6%97%A5%E6%9C%9F%E9%80%89%E6%8B%A9%E5%99%A8/index.html)、[在线演示二](https://codepen.io/oj8kay/pen/eoMMbz)

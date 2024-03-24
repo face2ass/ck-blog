@@ -32,19 +32,19 @@ __________________BBBBBBBBBBBBBBBB,
 
 我们需要给用户提供自定义文本内容、背景颜色、内容缩放、布局方式、字体大小、字体家族，以及一些已配置好的预设，最终发布后的效果如下图。
 
-![](https://oscimg.oschina.net/oscnet/up-2730069ffd34b2b6004340b9307a91e2102.png)
+![](/images/wallpaper_engine_1.png)
 
 第一步，去steam购买[Wallpaper Engine](https://store.steampowered.com/app/431960/Wallpaper_Engine/)并下载安装，就十几块钱，还是很值的~
 
 第二步，创建我们的工程。点击 编辑按钮 进入编辑器，再点击 创建壁纸 按钮，选择项目目录。这时软件会把资源拷贝到，** {软件目录}\\projects\\myprojects\\{项目目录} **，可以通过编辑器左上角的  **Edit -> Open in Explorer**  打开该目录。
 
-![](https://oscimg.oschina.net/oscnet/up-4a888b63b38baa3e3231b037190eb5f8cc2.png)
+![](/images/wallpaper_engine_2.png)
 
 第三步，配置工程。点击**Edit -> Change Project Settings** ，设置标题和主题颜色（方便用户搜索），以及用户自定义配置。
 
 点击 **Add Property** 添加项目的自定义选项，其中Type表示组件类型，有**Color**（颜色选择器）、**Slider**（滑块）、**CheckBox**（选择框）、**Combo**（下拉框）、**Text**（文本框）、**Directory**（目录选择器）、**File**（文件选择器），点击** OK **会在项目目录生成一个 **project.json** 文件，保存配置信息。比如我的工程配置如下：
 
-![](https://oscimg.oschina.net/oscnet/up-22cc9e340265c2d17be1725ffbfe11e7506.png)
+![](/images/wallpaper_engine_3.png)
 
 生成的 **project.json** 如下：
 
@@ -235,6 +235,6 @@ __________________BBBBBBBBBBBBBBBB,
 
 第六步，发布项目。点击左上角的 **Steam -> Share Wallpaper on Workshop**，填写描述，标题，预览图以及分级（开车太狠可过不了审），点击 **Pubilsh** 即可，随后你就能在自己的创意工坊主页看到了。
 
-![](https://static.oschina.net/uploads/space/2017/0630/180033_T7KY_1389094.png)[本项目的创意工坊地址（~~请科学上网~~）](https://steamcommunity.com/sharedfiles/filedetails/?id=2177282046 )
+![](/images/hand.webp)[本项目的创意工坊地址（~~请科学上网~~）](https://steamcommunity.com/sharedfiles/filedetails/?id=2177282046 )
 
-![](https://static.oschina.net/uploads/space/2017/0630/180033_T7KY_1389094.png)[完整代码戳这里](https://gitee.com/kaysama/blog-source-host/tree/master/%E5%8F%91%E5%B8%83%E7%BD%91%E9%A1%B5%E5%88%B0Wallpaper%20Engine)
+![](/images/hand.webp)[完整代码戳这里](https://gitee.com/kaysama/blog-source-host/tree/master/%E5%8F%91%E5%B8%83%E7%BD%91%E9%A1%B5%E5%88%B0Wallpaper%20Engine)

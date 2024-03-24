@@ -10,10 +10,10 @@ tags:
 
 或者 这样的图片：
 
-![](https://oscimg.oschina.net/oscnet/13b5c8d7877430b223c86a28bb51465cdca.jpg)
-<!-- more -->
-网上有很多生成这种图片/视频的工具，但是每个程序员都有一颗造轮子的心，我们当然要玩出自己的花样啦。老规矩，还是先讲原理，建议先用自己的方式实现一遍。原理很简单首先准备一组排好序的不同 “_着色密度_ ” 的**ascii字符**（事实上你可以用任何字符），比如 **#KDGLftji+;,:.** ，接着将源图转为灰度图，然后遍历图中的像素，根据r/g/b通道的值来匹配字符串中相应 “_着色密度_ ” 的字符，值越小则颜色越深，字符的“密度”也应越大。如果需要保留颜色，只需将灰度图和原图的像素位置一一对应即可。在开始实现功能之前，我们需要先了解一下颜色矩阵（ColorMatrix）。在计算机中，每个像素的颜色可以用一个向量（有的文章也叫矢量或分量）矩阵表示：\[R, G, B, A\]。颜色变换矩阵通常是用一个5x5的矩阵来表示，和空间中一个n维向量的平移变换需要用一个n+1维的矩阵来表示一样，颜色矩阵也需要引入一个齐次坐标来进行“平移操作”。以下是一些常见的颜色变换矩阵：
+![](/images/ascii_art_1.jpg)
 
+网上有很多生成这种图片/视频的工具，但是每个程序员都有一颗造轮子的心，我们当然要玩出自己的花样啦。老规矩，还是先讲原理，建议先用自己的方式实现一遍。原理很简单首先准备一组排好序的不同 “_着色密度_ ” 的**ascii字符**（事实上你可以用任何字符），比如 **#KDGLftji+;,:.** ，接着将源图转为灰度图，然后遍历图中的像素，根据r/g/b通道的值来匹配字符串中相应 “_着色密度_ ” 的字符，值越小则颜色越深，字符的“密度”也应越大。如果需要保留颜色，只需将灰度图和原图的像素位置一一对应即可。在开始实现功能之前，我们需要先了解一下颜色矩阵（ColorMatrix）。在计算机中，每个像素的颜色可以用一个向量（有的文章也叫矢量或分量）矩阵表示：\[R, G, B, A\]。颜色变换矩阵通常是用一个5x5的矩阵来表示，和空间中一个n维向量的平移变换需要用一个n+1维的矩阵来表示一样，颜色矩阵也需要引入一个齐次坐标来进行“平移操作”。以下是一些常见的颜色变换矩阵：
+<!-- more -->
 亮度矩阵
 
 |   | R | G | B | A | W |
@@ -507,16 +507,16 @@ var tick = function () {
 
 那gif怎么搞呢？
 
-![](https://oscimg.oschina.net/oscnet/bd3625fe092499cd80ebfe993e5e290d046.jpg)
+![](/images/ascii_art_2.jpg)
 
 emmmm，[gif-frames](https://github.com/benwiley4000/gif-frames) 可以把gif导出多张序列帧，后面的原理基本就和视频差不太多了，就给大家当课后作业吧 23333
 
-![](https://static.oschina.net/uploads/space/2017/0630/180033_T7KY_1389094.png)[完整代码戳这里](https://gitee.com/kaysama/blog-source-host/tree/master/%E5%AD%97%E7%AC%A6%E7%94%BB)
+![](/images/hand.webp)[完整代码戳这里](https://gitee.com/kaysama/blog-source-host/tree/master/%E5%AD%97%E7%AC%A6%E7%94%BB)
 
-![](https://static.oschina.net/uploads/space/2017/0630/180033_T7KY_1389094.png)Demo1：[Bad Apple!!（dom版）](http://kaysama.gitee.io/blog-source-host/%E5%AD%97%E7%AC%A6%E7%94%BB/ascii_art_dom_animate.html)
+![](/images/hand.webp)Demo1：[Bad Apple!!（dom版）](http://kaysama.gitee.io/blog-source-host/%E5%AD%97%E7%AC%A6%E7%94%BB/ascii_art_dom_animate.html)
 
-![](https://static.oschina.net/uploads/space/2017/0630/180033_T7KY_1389094.png)Demo2：[Big Buck Bunny（canvas版-彩色）](http://kaysama.gitee.io/blog-source-host/%E5%AD%97%E7%AC%A6%E7%94%BB/ascii_art_canvas.html)
+![](/images/hand.webp)Demo2：[Big Buck Bunny（canvas版-彩色）](http://kaysama.gitee.io/blog-source-host/%E5%AD%97%E7%AC%A6%E7%94%BB/ascii_art_canvas.html)
 
-![](https://static.oschina.net/uploads/space/2017/0630/180033_T7KY_1389094.png)Demo3：[t](http://kaysama.gitee.io/blog-source-host/%E5%AD%97%E7%AC%A6%E7%94%BB/ascii_art_canvas.html)[rump（dom版）](http://kaysama.gitee.io/blog-source-host/%E5%AD%97%E7%AC%A6%E7%94%BB/ascii_art_dom.html)
+![](/images/hand.webp)Demo3：[t](http://kaysama.gitee.io/blog-source-host/%E5%AD%97%E7%AC%A6%E7%94%BB/ascii_art_canvas.html)[rump（dom版）](http://kaysama.gitee.io/blog-source-host/%E5%AD%97%E7%AC%A6%E7%94%BB/ascii_art_dom.html)
 
-![](https://static.oschina.net/uploads/space/2017/0630/180033_T7KY_1389094.png)Demo4：See the Pen [ascii\_art\_pure](https://codepen.io/oj8kay/pen/bOMLOW) by Kay ([@oj8kay](https://codepen.io/oj8kay)) on [CodePen](https://codepen.io).
+![](/images/hand.webp)Demo4：See the Pen [ascii\_art\_pure](https://codepen.io/oj8kay/pen/bOMLOW) by Kay ([@oj8kay](https://codepen.io/oj8kay)) on [CodePen](https://codepen.io).

@@ -24,14 +24,28 @@
       width: 100%;
       padding-right: 1rem;
       flex: 1;
-      //max-height: 80px;
-      //overflow: hidden;
-      b, strong, h1, h2, h3, h4, h5, h6 {
-        font-weight: normal;
+      font-size: 0.95rem;
+
+      b, strong, th {
+        font-weight: 500;
+        //font-weight: normal;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        //font-weight: normal;
+        font-size: 1.2rem;
       }
 
       p {
         margin-bottom: 0.5em;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      ul:last-child, ol:last-child {
+        margin-bottom: 0;
       }
 
       img {
@@ -41,6 +55,22 @@
 
       a {
         color: var(--bs-body-color);
+      }
+
+      blockquote {
+        padding: 0.4rem 0.4rem 0.4rem 0.2rem;
+        background-color: rgba(150, 150, 150, 0.08);
+        border-left: 0.5rem solid rgba(150, 150, 150, 0.12);
+        border-radius: var(--bs-border-radius);
+        margin-bottom: 0.5rem;
+
+        p:last-child {
+          margin-bottom: 0;
+        }
+
+        ul:last-child {
+          margin-bottom: 0;
+        }
       }
     }
 
@@ -55,7 +85,7 @@
 
   //更多按钮
   .btn-more {
-    margin-top: 0.2rem;
+    margin-top: 0.4rem;
 
     & > .bi {
       margin-top: 0.2rem;

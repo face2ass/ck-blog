@@ -7,9 +7,9 @@ tags:
 时隔两年，继续完成这个系列，现在回顾一下两年前的这篇文章 [前端实现旗帜飘动效果系列 (Ⅳ)：webgl实现](https://my.oschina.net/codingDog/blog/1839100) ，发现自己当初对webgl的理解不透彻，产生了很多纰漏，也走了不少歪路，实际上使用shader有更方便的实现方法，新的思路不再需要做复杂的仿射，只需通过简单的三角函数控制片元着色器的采样位置即可。
 
 核心是[pixi](https://github.com/pixijs/pixi.js)过滤器PIXI.Filter以及片元着色器。
-<!-- more -->
-① PIXI.Filter类可以忽略顶点着色器，因为pixi.js内置了一套默认的顶点着色器，如果传入空，就是用该着色器模板（pixi v5版）：
 
+① PIXI.Filter类可以忽略顶点着色器，因为pixi.js内置了一套默认的顶点着色器，如果传入空，就是用该着色器模板（pixi v5版）：
+<!-- more -->
 ```cpp
 attribute vec2 aVertexPosition;
 
@@ -101,13 +101,13 @@ void main(void){
 
 为了调试方便，我添加了[dat.gui](https://github.com/dataarts/dat.gui)插件，最终效果如图：
 
-![](https://oscimg.oschina.net/oscnet/up-5510925f2fa0289418279b8beed944e5c01.gif)
+![](/images/pixi_flag.gif)
 
 如果本文对您有帮助还请点个赞😁
 
-![](https://static.oschina.net/uploads/space/2017/0630/180033_T7KY_1389094.png)[完整代码戳这里](https://gitee.com/kaysama/blog-source-host/tree/master/%E5%89%8D%E7%AB%AF%E5%AE%9E%E7%8E%B0%E6%97%97%E5%B8%9C%E9%A3%98%E5%8A%A8%E6%95%88%E6%9E%9C%E7%B3%BB%E5%88%97/pixi%E5%AE%9E%E7%8E%B0)
+![](/images/hand.webp)[完整代码戳这里](https://gitee.com/kaysama/blog-source-host/tree/master/%E5%89%8D%E7%AB%AF%E5%AE%9E%E7%8E%B0%E6%97%97%E5%B8%9C%E9%A3%98%E5%8A%A8%E6%95%88%E6%9E%9C%E7%B3%BB%E5%88%97/pixi%E5%AE%9E%E7%8E%B0)
 
-![](https://static.oschina.net/uploads/space/2017/0630/180033_T7KY_1389094.png)[在线演示1](http://kaysama.gitee.io/blog-source-host/%E5%89%8D%E7%AB%AF%E5%AE%9E%E7%8E%B0%E6%97%97%E5%B8%9C%E9%A3%98%E5%8A%A8%E6%95%88%E6%9E%9C%E7%B3%BB%E5%88%97/pixi%E5%AE%9E%E7%8E%B0/index.html)、[在线演示2](https://codepen.io/oj8kay/pen/vYyjwGv)
+![](/images/hand.webp)[在线演示1](http://kaysama.gitee.io/blog-source-host/%E5%89%8D%E7%AB%AF%E5%AE%9E%E7%8E%B0%E6%97%97%E5%B8%9C%E9%A3%98%E5%8A%A8%E6%95%88%E6%9E%9C%E7%B3%BB%E5%88%97/pixi%E5%AE%9E%E7%8E%B0/index.html)、[在线演示2](https://codepen.io/oj8kay/pen/vYyjwGv)
 
 **目录指引：**
 

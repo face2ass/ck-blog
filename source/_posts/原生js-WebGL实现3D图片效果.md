@@ -6,20 +6,20 @@ tags:
 
 海外党玩F***book的时候可能有接触过这个酷炫的3d图片效果：
 
-![](https://oscimg.oschina.net/oscnet/up-174cdf7cde167b48330b43441a4a942d62e.gif)
+![](/images/webgl_3d_1.gif)
 
 只要通过客户端的这个入口——
-<!-- more -->
-![](https://oscimg.oschina.net/oscnet/up-eed54ecb616e05e8a6ff2461610c93e179e.JPEG)
+
+![](/images/webgl_3d_2.jpg)
 
 或者网页版的这个入口——
 
-![](https://oscimg.oschina.net/oscnet/up-835cc8918dcfb5372b00926b4c46eb5dfff.png)
+![](/images/webgl_3d_3.png)
 
 就能生成。不知道咋玩的请参考官方的[帮助手册](https://www.facebook.com/help/414295416095269)
 。今天就教大家手撸出一个这样的功能，不要担心，所有代码加起来不超过200行并且不使用任何第三方库。虽然canvas2D也能做出这个效果，但是基于这种像素级操作的性能考虑，WebGL显然是更好的方案，我前面的有些教程也用到了WebGL，核心的API我就不做过多介绍，直接详细地注释在最终的代码里面了，代码仍然使用WebGL
 1.0版本。
-
+<!-- more -->
 老规矩，还是先介绍原理，推荐有想法的读者略过教程，自己直接根据原理去撸出来，因为我还是秉持着话痨的特色，想到什么说什么，教程中掺杂一些自己的干货，对一些人来说可能过于啰嗦。夹，哈吉咩马修！（工地日语
 
 _非死不可_客户端在上传图片的时候你有两种可选操作：
@@ -32,7 +32,7 @@ _非死不可_客户端在上传图片的时候你有两种可选操作：
 
 具体是怎么产生3D效果的呢？深度贴图中，颜色越浅（值越小）表示深度约低，通过深度贴图的深度值来对原图的采样位置进行偏移，比如当你把贴图往左偏移，然后使用偏移的距离乘上原图的某个坐标在贴图上的深度值得到的结果来对原图进行采样，就会得到不同的点在不同的深度偏移的大小不同的情况，距离越近的偏移越小，距离越远的偏移越大，是不是很符合我们生活中的常识？事实上，抛弃主观感知，从底层角度考虑，最终展现出来的效果其实就是一部分的像素点被压缩了，一部分的像素点被拉伸了。不知道大家有没有用过live2D或者Spine、龙骨等工具做出来的动画，就是这种：
 
-![](https://oscimg.oschina.net/oscnet/up-6c98964786f2f5c77ee4014a369e4f3ffa8.gif)
+![](/images/webgl_3d_4.gif)
 
 刚刚所说的底层变化是不是和这种网格动画很像，其实都是对图片的变形来达到3D效果，就单张图的变化而言，他们的唯一区别就是蒙皮动画是手动key帧（或者是骨骼绑定——这个以后有机会谈谈），而3D图片是通过深度贴图自动生成。
 
@@ -338,8 +338,8 @@ function loop() {
 
 ok，大功告成，预览一下效果图——
 
-![](https://oscimg.oschina.net/oscnet/up-64d85ccaf96e901c05381ea9e2c9500980c.gif)
+![](/images/webgl_3d_5.gif)
 
-![](https://static.oschina.net/uploads/space/2017/0630/180033_T7KY_1389094.png) [完整代码戳这里](https://gitee.com/kaysama/blog-source-host/tree/master/3D%E7%9B%B8%E7%89%87)
+![](/images/hand.webp) [完整代码戳这里](https://gitee.com/kaysama/blog-source-host/tree/master/3D%E7%9B%B8%E7%89%87)
 
-![](https://static.oschina.net/uploads/space/2017/0630/180033_T7KY_1389094.png)[在线演示1](http://kaysama.gitee.io/blog-source-host/3D%E7%9B%B8%E7%89%87/index.html)，[在线演示2](http://codepen.io/oj8kay/full/JjdoORm)
+![](/images/hand.webp)[在线演示1](http://kaysama.gitee.io/blog-source-host/3D%E7%9B%B8%E7%89%87/index.html)，[在线演示2](http://codepen.io/oj8kay/full/JjdoORm)

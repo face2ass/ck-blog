@@ -10,16 +10,17 @@ tags:
 ### Hibernate对象的三种状态的概念及互相转化：
 
 1. 瞬时状态或临时状态（Transient）：用new创建的对象，它没有持久化，没有处于Session中；
-2. 持久状态（Persistent）：已经持久化，加入到了Session缓存中。如通过hibernate语句保存的对象；
+2. 持久状态（Persistent）：已经持久化，加入到了Session缓存中。如通过hibernate语句保存的对象；<!-- more -->
 3. 三脱管状态或游离状态（Detached）：持久化对象脱离了Session的对象。如Session缓存被清空的对象。特点：已经持久化，但不在Session缓存中；
+
 
 |                        | 临时状态（Transient） | 持久化状态（Persistent） | 游离状态（Detached） |
 | ---------------------- | --------------------- | ------------------------ | -------------------- |
 | 是否处于Session缓存中  | ×                     | √                        | ×                    |
 | 数据库中是否有对应记录 | ×                     | √                        | √                    |
-<!-- more -->
 
-![img](https://static.oschina.net/uploads/space/2016/1012/131536_9Dao_1389094.png)
+
+![](/images/hibernate.png)
 
 ### 游离对象和临时对象异同：
 

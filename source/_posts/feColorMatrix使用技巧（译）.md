@@ -6,19 +6,20 @@ categories:
 tags:
   - Svg
   - 图形
+excerpt: 你们见过 Spotify 的年终活动吗？他们通过图像颜色处理创造了引人注目的视觉美感。<br>善用图形处理可以增加我们网页的逼格——过滤器filter就能通过动态串联的方式帮我们在浏览器做到这一点。
 ---
 
 你们见过 Spotify 的年终活动吗？他们通过图像颜色处理创造了引人注目的视觉美感。
 
-![Screenshot of Spotify’s end-of-year campaign](https://i0.wp.com/alistapart.com/wp-content/uploads/2016/02/fig-01-spotify1a.jpg?w=960&ssl=1)
+![Screenshot of Spotify’s end-of-year campaign](/images/fecolormatrix_1.jpg)
 
 善用图形处理可以增加我们网页的逼格——过滤器filter就能通过动态串联的方式帮我们在浏览器做到这一点。
-<!-- more -->
+
 ## **CSS 与 SVG**
 
 今年早些时候，我推出了[CSSgram](http://una.im/CSSgram)，这是一个纯 CSS 库，它使用过滤器和混合模式来创建图片过滤器。
 
-![Image grid from Una Kravets’ CSSGram showing a variety of filters and blend modes that recreate Instagram filters](https://i0.wp.com/alistapart.com/wp-content/uploads/2016/02/fig-03-cssgram.jpg?w=960&ssl=1)
+![Image grid from Una Kravets’ CSSGram showing a variety of filters and blend modes that recreate Instagram filters](/images/fecolormatrix_2.jpg)
 
 现在，这可以通过修补和混合模式来完成——但CSS过滤器有一个巨大的缺点：它无法控制RGBA通道。但是SVG的feColorMatrix弥补了这个不足。
 
@@ -27,7 +28,7 @@ tags:
 在SVG中，fe-前缀表示滤镜相关属性。它们可以产生各种各样的颜色效果，比如模糊，比如生成3D纹理。
 
 SVG 过滤器兼容性：  
-![](https://oscimg.oschina.net/oscnet/up-7b5070e3a8ccb7682e8b21f673e6e767b6e.png)
+![](/images/fecolormatrix_3.png)
 
 可以看到如果你不需要支持IE9以下版本，那么就可以放心地使用svg过滤器了。
 
@@ -56,7 +57,7 @@ url里面是过滤器的路径，所以`filter: url('../img/filter.svg#filterNam
 
 ## feColorMatrix
 
-feColorMatrix是色彩处理最核心的属性，它可以基于矩阵对通道 (RGBA)处理从而影​​响色值。类似 Photoshop 中的通道编辑功能。
+feColorMatrix是色彩处理最核心的属性，它可以基于矩阵对通道 (RGBA)处理从而影响色值。类似 Photoshop 中的通道编辑功能。
 
 这是的`feColorMatrix`写法，在原始图像中每个 RGBA 值默认是1：
 
@@ -71,27 +72,22 @@ feColorMatrix是色彩处理最核心的属性，它可以基于矩阵对通道 
               0 0 0 A 0 "/>
   </filter>
 </feColorMatrix>
-
-
 ```
 
-最后一个数字1是用来做通道值的piany。最终的 RGBA 值可以像列一​​样从上到下读取：
+最后一个数字1是用来做通道值的piany。最终的 RGBA 值可以像列一样从上到下读取：
 
 ```css
-
 /* R G B A 1 */
 1 0 0 0 0 // R = 1*R + 0*G + 0*B + 0*A + 0
 0 1 0 0 0 // G = 0*R + 1*G + 0*B + 0*A + 0
 0 0 1 0 0 // B = 0*R + 0*G + 1*B + 0*A + 0
 0 0 0 1 0 // A = 0*R + 0*G + 0*B + 1*A + 0
-
-
 ```
 
 下图可以更直观的看出颜色矩阵和颜色向量是如何相乘的
 
 
-![Hand-drawn sketch showing a schematic visualization of the fecolormatrix](https://i0.wp.com/alistapart.com/wp-content/uploads/2016/02/fig-05-color-matrix-visual.jpg?w=960&ssl=1)
+![Hand-drawn sketch showing a schematic visualization of the fecolormatrix](/images/fecolormatrix_4.jpg)
 
 ## RGB值
 
@@ -132,7 +128,7 @@ feColorMatrix是色彩处理最核心的属性，它可以基于矩阵对通道 
 ```
 
 这就是图像添加上面“green”这个滤镜后的样子：  
-![Photo showing what the addition of the “green” filter would look like](https://i0.wp.com/alistapart.com/wp-content/uploads/2016/02/fig-06-green.jpg?w=960&ssl=1)
+![Photo showing what the addition of the “green” filter would look like](/images/fecolormatrix_5.jpg)
 
 #### 通道混合
 
@@ -175,11 +171,11 @@ feColorMatrix是色彩处理最核心的属性，它可以基于矩阵对通道 
 [Justin McDowell](https://twitter.com/revoltpuppy)写过一篇文章[《Mixing Color for the Web》](http://alistapart.com/article/mixing-color-for-the-web-with-sass)，解释了 HSL（色相、饱和度、亮度）颜色理论。对 SVG来说，需要记住 亮度值就是明度。在这里，每个通道中都保留了每个亮度级别，因此对于紫色，我们得到的图像如下：
 
 
-![Photo showing how a magenta effect is produced when each luminosity level is retained in each channel](https://i0.wp.com/alistapart.com/wp-content/uploads/2016/02/fig-07-magenta.jpg?w=960&ssl=1)
+![Photo showing how a magenta effect is produced when each luminosity level is retained in each channel](/images/fecolormatrix_6.jpg)
 
 为什么云中有这么多紫色和亮度？思考下这张 RGB 图表：
 
-![RGB chart](https://i0.wp.com/alistapart.com/wp-content/uploads/2016/02/fig-08-rgb.png?w=960&ssl=1)
+![RGB chart](/images/fecolormatrix_7.png)
 
 当一个值缺失会被另外两个值替代。所以现在，没有绿色通道，就没有白色、青色或黄色。然而，这些颜色实际上并没有消失，因为它们的亮度（或 alpha）值还未被触及。我们接下来试试操作这些 Alpha 通道时会发生什么。
 
@@ -234,7 +230,7 @@ In the following example, we’re reusing the matrix from the magenta example an
 ```
 
 
-![Image showing what happens when we reuse the matrix from the magenta example and add a 100% alpha channel on the blue level](https://i0.wp.com/alistapart.com/wp-content/uploads/2016/02/fig-09-blue-magenta.jpg?w=960&ssl=1)
+![Image showing what happens when we reuse the matrix from the magenta example and add a 100% alpha channel on the blue level](/images/fecolormatrix_8.jpg)
 
 如果最后一个值小于 0（最多 -1），则会发生相反的情况。阴影会变成红色而不是蓝色。在 -1 时，这些会产生相同的效果：
 
@@ -259,7 +255,7 @@ In the following example, we’re reusing the matrix from the magenta example an
 ```
 
 
-![Image showing a red overlay, making the shadows red instead of blue](https://i0.wp.com/alistapart.com/wp-content/uploads/2016/02/fig-10-red.jpg?w=960&ssl=1)
+![Image showing a red overlay, making the shadows red instead of blue](/images/fecolormatrix_9.jpg)
 
 然而，将这个值设为 0.5 而不是 -1，可以让我们看到阴影中的颜色混合：
 
@@ -275,7 +271,7 @@ In the following example, we’re reusing the matrix from the magenta example an
 ```
 
 
-![Image showing a mixture of colors in the shadows](https://i0.wp.com/alistapart.com/wp-content/uploads/2016/02/fig-11-blue-magenta-2.jpg?w=960&ssl=1)
+![Image showing a mixture of colors in the shadows](/images/fecolormatrix_10.jpg)
 
 #### 移出通道
 
@@ -293,7 +289,7 @@ In the following example, we’re reusing the matrix from the magenta example an
 ```
 
 
-![Image showing an example of blowing out a channel. We can get rid of the sky and the blue values by  converting blue values to white](https://i0.wp.com/alistapart.com/wp-content/uploads/2016/02/fig-12-blue-to-white.jpg?w=960&ssl=1)
+![Image showing an example of blowing out a channel. We can get rid of the sky and the blue values by  converting blue values to white](/images/fecolormatrix_11.jpg)
 
 以下是更多通道混合的示例：
 
@@ -332,7 +328,7 @@ In the following example, we’re reusing the matrix from the magenta example an
 ## **变亮和变暗**
 
 您可以通过将每个通道的 RGB 值设置为小于 1 的值（这是完整的自然强度）来创建变暗效果。要变亮，请将值增加到大于 1。您可以将其视为扩大或减少前面显示的 RGB 色环。圆的半径越宽，创建的色调越亮，“吹散”的白色就越多。当半径减小时会发生相反的情况。  
-![Diagram showing how you can create a darken effect by setting the RGB values at each channel to a a value less than 1; to lighten, increase the values to greater than 1](https://i0.wp.com/alistapart.com/wp-content/uploads/2016/02/fig-13-rgb-explainer.png?w=960&ssl=1)
+![Diagram showing how you can create a darken effect by setting the RGB values at each channel to a a value less than 1; to lighten, increase the values to greater than 1](/images/fecolormatrix_12.png)
 
 这是对应的矩阵：
 
@@ -348,7 +344,7 @@ In the following example, we’re reusing the matrix from the magenta example an
 ```
 
 
-![Image with a darken filter applied](https://i0.wp.com/alistapart.com/wp-content/uploads/2016/02/fig-14-darken.jpg?w=960&ssl=1)
+![Image with a darken filter applied](/images/fecolormatrix_13.jpg)
 
 ```xml
 <filter id="lighten">
@@ -362,7 +358,7 @@ In the following example, we’re reusing the matrix from the magenta example an
 ```
 
 
-![Image with a lighten filter applied](https://i0.wp.com/alistapart.com/wp-content/uploads/2016/02/fig-15-lighten.jpg?w=960&ssl=1)
+![Image with a lighten filter applied](/images/fecolormatrix_14.jpg)
 
 ### **灰度**
 
@@ -380,7 +376,7 @@ In the following example, we’re reusing the matrix from the magenta example an
 ```
 
 
-![Image showing a 'gray on light' effect](https://i0.wp.com/alistapart.com/wp-content/uploads/2016/02/fig-16-gray-on-light.jpg?w=960&ssl=1)
+![Image showing a 'gray on light' effect](/images/fecolormatrix_15.jpg)
 
 ```xml
 <filter id="gray-on-mid">
@@ -394,7 +390,7 @@ In the following example, we’re reusing the matrix from the magenta example an
 ```
 
 
-![Image showing a 'gray on mid' effect](https://i0.wp.com/alistapart.com/wp-content/uploads/2016/02/fig-17-gray-on-mid.jpg?w=960&ssl=1)
+![Image showing a 'gray on mid' effect](/images/fecolormatrix_16.jpg)
 
 ```xml
 <filter id="gray-on-dark">
@@ -408,7 +404,7 @@ In the following example, we’re reusing the matrix from the magenta example an
 ```
 
 
-![Image showing a 'gray on dark' effect](https://i0.wp.com/alistapart.com/wp-content/uploads/2016/02/fig-18-gray-on-dark.jpg?w=960&ssl=1)
+![Image showing a 'gray on dark' effect](/images/fecolormatrix_17.jpg)
 
 ## **将它们拉在一起**
 
@@ -428,7 +424,7 @@ In the following example, we’re reusing the matrix from the magenta example an
 我们在其正常的 Alpha 通道上使用红色通道，以一半强度应用绿色，并在较暗的 Alpha 通道上应用蓝色，但不在其原始颜色位置。该效果在阴影中为我们提供了深蓝色，并为高光和中间色调提供了红色和半绿色的混合。如果我们回忆一下 red + green = yellow，red + (green/2) 会更像珊瑚色：
 
 
-![Image showing what happens when we use the red channel at its normal alpha channel, apply green at half strength, and apply blue on the darker alpha channels but not at its original color location](https://i0.wp.com/alistapart.com/wp-content/uploads/2016/02/fig-19-peachy.jpg?w=960&ssl=1)
+![Image showing what happens when we use the red channel at its normal alpha channel, apply green at half strength, and apply blue on the darker alpha channels but not at its original color location](/images/fecolormatrix_18.jpg)
 
 这是另一个例子：
 
@@ -446,7 +442,7 @@ In the following example, we’re reusing the matrix from the magenta example an
 在那个片段中，我们使用了正常的红色像素色调、过度的绿色和没有原始色调像素的蓝色，但应用在阴影中。再次，我们在阴影中看到深蓝色，并且由于红色 \+ 绿色 = 黄色，红色 \+ (green*2) 在高光中将更像是黄绿色：
 
 
-![Image showing what happens when we use the normal pixel hue of red, a blown-out green, and blue devoid of its original hue pixels, but applied in the shadows. Again, we see that dark blue in the shadows, and since red + green = yellow, red + (green*2) would be more of a yellow-green in the highlights](https://i0.wp.com/alistapart.com/wp-content/uploads/2016/02/fig-20-lime.jpg?w=960&ssl=1)
+![Image showing what happens when we use the normal pixel hue of red, a blown-out green, and blue devoid of its original hue pixels, but applied in the shadows. Again, we see that dark blue in the shadows, and since red + green = yellow, red + (green*2) would be more of a yellow-green in the highlights](/images/fecolormatrix_19.jpg)
 
 通过玩这些价值观可以探索很多东西。这种探索的一个很好的例子是[Rachel Nabors](https://twitter.com/rachelnabors)的[Dev Tools Challenger](http://devtoolschallenger.com/)，她从海里的鱼中过滤掉了较长的波长（即红色和橙色通道），解释了为什么“Orange Roughy”实际上在水中看起来是黑色的。（注意：需要 Firefox。）
 

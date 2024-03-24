@@ -10,7 +10,7 @@ tags:
 
 于是就有了下图的效果（背景是一张动图，然后使用文字对背景进行裁剪。字体透明填充，与背景叠加）
 <!-- more -->
-![](https://oscimg.oschina.net/oscnet/up-0b0adace9f28fbb5d8432c707401bda8356.gif)
+![](/images/mememe.gif)
 
 html结构：
 
@@ -118,6 +118,6 @@ function onImgLoaded () {
 }
 ```
 
-![](https://static.oschina.net/uploads/space/2017/0630/180033_T7KY_1389094.png)[完整代码戳这里](https://gitee.com/kaysama/blog-source-host/blob/master/%E5%AD%97%E7%AC%A6%E7%94%BB/ascii_art_css.html)
+![](/images/hand.webp)[完整代码戳这里](https://gitee.com/kaysama/blog-source-host/blob/master/%E5%AD%97%E7%AC%A6%E7%94%BB/ascii_art_css.html)
 
-![](https://static.oschina.net/uploads/space/2017/0630/180033_T7KY_1389094.png)[在线演示1](https://kaysama.gitee.io/blog-source-host/%E5%AD%97%E7%AC%A6%E7%94%BB/ascii_art_css.html)、[在线演示2](https://codepen.io/oj8kay/pen/NWxEzgx)
+![](/images/hand.webp)[在线演示1](https://kaysama.gitee.io/blog-source-host/%E5%AD%97%E7%AC%A6%E7%94%BB/ascii_art_css.html)、[在线演示2](https://codepen.io/oj8kay/pen/NWxEzgx)

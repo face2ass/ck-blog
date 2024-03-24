@@ -27,6 +27,6 @@ tags:
 逆序数为奇数的排列称为奇排列。逆序数为偶数的排列称为偶排列  
 例如，2431是偶排列，45321是奇排列， 12.....n 的逆序数是零，因而是偶排列。
 
-![](https://static.oschina.net/uploads/space/2017/0630/180033_T7KY_1389094.png)[完整代码戳这里](https://gitee.com/kaysama/blog-source-host/blob/master/n%E7%BA%A7%E6%8E%92%E5%88%97/index.html)
+![](/images/hand.webp)[完整代码戳这里](https://gitee.com/kaysama/blog-source-host/blob/master/n%E7%BA%A7%E6%8E%92%E5%88%97/index.html)
 
-![](https://static.oschina.net/uploads/space/2017/0630/180033_T7KY_1389094.png)[在线演示1](http://kaysama.gitee.io/blog-source-host/n%E7%BA%A7%E6%8E%92%E5%88%97/)、[在线演示2](https://codepen.io/oj8kay/pen/QWybzgG)
+![](/images/hand.webp)[在线演示1](http://kaysama.gitee.io/blog-source-host/n%E7%BA%A7%E6%8E%92%E5%88%97/)、[在线演示2](https://codepen.io/oj8kay/pen/QWybzgG)
