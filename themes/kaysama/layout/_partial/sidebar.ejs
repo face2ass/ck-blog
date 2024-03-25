@@ -1,6 +1,7 @@
 <div>
+  <%- search_form({class: 'search-input', text: '请输入', button: '搜索'}) %>
   <%# 关于我 %>
-  <div class="p-4 mb-3 bg-body-tertiary rounded">
+  <div class="mb-3 p-4 bg-body-tertiary rounded">
     <h4>关于博主</h4>
     <p class="mb-0">从 Java 转 Python 转 JavaScript
       的三姓家奴，编程江湖里猥琐发育的卡拉米，极客精神的拙劣践行者，原二次元萌豚，现中二病康复期<br>生命不息，折腾不止。</p>
@@ -8,9 +9,9 @@
 
   <%# 标签 %>
   <% if (site.tags.length) { %>
-    <div class="aside-section">
+    <div class="aside-section mb-3">
       <h4>标签</h4>
-      <div class="tag-list">
+      <div class="tag-list overflowed">
         <div class="tag-item-wrap">
           <% sort_list(site.tags).map(function(t, i){ %>
             <div class="tag-item">
@@ -33,49 +34,7 @@
   <%# 分类 %>
   <div class="aside-section">
     <h4>分类</h4>
-    <ul class="list-unstyled ps-0">
-      <li class="mb-1">
-        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse"
-          data-bs-target="#home-collapse" aria-expanded="true">
-          Home
-        </button>
-        <div class="collapse show" id="home-collapse">
-          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Overview</a></li>
-            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Updates</a></li>
-            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Reports</a></li>
-          </ul>
-        </div>
-      </li>
-      <li class="mb-1">
-        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse"
-          data-bs-target="#dashboard-collapse" aria-expanded="false">
-          Dashboard
-        </button>
-        <div class="collapse" id="dashboard-collapse">
-          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Overview</a></li>
-            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Weekly</a></li>
-            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Monthly</a></li>
-            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Annually</a></li>
-          </ul>
-        </div>
-      </li>
-      <li class="mb-1">
-        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse"
-          data-bs-target="#orders-collapse" aria-expanded="false">
-          Orders
-        </button>
-        <div class="collapse" id="orders-collapse">
-          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">New</a></li>
-            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Processed</a></li>
-            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Shipped</a></li>
-            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Returned</a></li>
-          </ul>
-        </div>
-      </li>
-    </ul>
+    <%- category_tree(site) %>
   </div>
 
 </div>

@@ -145,3 +145,33 @@ hexo.extend.helper.register('sort_list', function (list) {
   })
   return _list
 })
+
+hexo.extend.helper.register('category_tree', function (site) {
+  const list = site.categories
+  const nest = (items, _id) =>
+    items
+      .filter(item => item.parent === _id)
+      .map(item => ({ ...item, children: nest(items, item._id) }))
+
+  const tree = nest(list)
+  return `
+    <ul class="list-unstyled ps-0">
+      ${tree.map(t => `
+      <li class="mb-1">
+          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse">
+            ${t.name}
+          </button>
+          ${t.children?.length ? `
+          <div class="collapse show" id="home-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            ${t.children.map(c => (`
+              <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">${c.name}</a></li>
+            `)).join('')}
+            </ul>
+          </div>
+          ` : ''}
+      </li>
+    `).join('')}
+    </ul>
+  `
+})

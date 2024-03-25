@@ -50,3 +50,18 @@ html {
 ::-webkit-scrollbar-corner {
   background: transparent;
 }
+
+.page-footer {
+  .icp {
+    font-size: 14px;
+
+    & > a {
+      color: inherit;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

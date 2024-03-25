@@ -180,7 +180,7 @@ image.onload = function () {
 
 ② 因为使用了ease-in-out的动画曲线，所以可以模拟出三角函数的波形图
 
-③ 原理和代码都比较简单，可能比较需要注意的是这句 styleHtmlAry.push('#flag > li:nth-child(' + formula + i + ') { ')，对css3了解的朋友应该知道:nth-child的用法，括号里面的是一个等差数列表达式，项数规定用n表示，那么公差是多少呢，由于我们的动画是周期性的，所以公差应该是每个周期包含的切片数量（正整数），即 var sliceCountPerPeriod = Math.floor(sliceCount / period)。
+③ 原理和代码都比较简单，可能比较需要注意的是这句 styleHtmlAry.push('#flag > li:nth-child(' + formula + i + ') { ')，对css3了解的朋友应该知道:nth-child的用法，括号里面的是一个等差数列表达式，项数规定用n表示，那么公差是多少呢，由于我们的动画是周期性的，所以公差应该是每个周期包含的切片数量（正整数），即 var sliceCountPerPeriod = Math.floor(sliceCount / period)。
 
 写完以上代码，我们的基本雏形就出来了，这是切片数为80份，振幅20单位，2个周期，周期时长为2秒 时的效果图：
 
@@ -239,7 +239,7 @@ styleHtmlAry.push('}')
 
 ![](/images/hand.webp)[Demo1](http://kaysama.gitee.io/blog-source-host/%E5%89%8D%E7%AB%AF%E5%AE%9E%E7%8E%B0%E6%97%97%E5%B8%9C%E9%A3%98%E5%8A%A8%E6%95%88%E6%9E%9C%E7%B3%BB%E5%88%97/dom+css%E5%AE%9E%E7%8E%B0/)
 
-![](/images/hand.webp)Demo2：See the Pen [flag waving by dom+css](https://codepen.io/oj8kay/pen/oMvjeK) by Kay ([@oj8kay](https://codepen.io/oj8kay)) on [CodePen](https://codepen.io/).
+![](/images/hand.webp)Demo2：See the Pen [flag waving by dom+css](https://codepen.io/oj8kay/pen/oMvjeK) by Kay ([@oj8kay](https://codepen.io/oj8kay)) on [CodePen](https://codepen.io/).
 
 **目录指引：**
 
