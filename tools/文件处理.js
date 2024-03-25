@@ -13,31 +13,31 @@ console.log('------------------- start -------------------')
 fileDisplay(scanDir)
 
 function fileDisplay(fileDir) {
-    try {
-        const files = fs.readdirSync(fileDir)
-        let filename,newFilename
-        for (let i = 0; i < files.length; i++) {
-            filename = files[i]
-            var filePath = path.join(fileDir, filename)
-            const stats = fs.statSync(filePath)
-            var isFile = stats.isFile()
-            var isDir = stats.isDirectory()
-            if (isFile) {
-                // 下划线改为中划线
-                if (filename.indexOf('_') !== -1) {
-                    newFilename = filename.replace(/_/g, '-')
-                    fs.renameSync(filePath, path.join(fileDir, newFilename))
-                    console.log(++completedCount, filename, '===>', newFilename)
-                }
-
-            }
-            if (isDir) {
-                fileDisplay(filePath)
-            }
+  try {
+    const files = fs.readdirSync(fileDir)
+    let filename, newFilename
+    for (let i = 0; i < files.length; i++) {
+      filename = files[i]
+      var filePath = path.join(fileDir, filename)
+      const stats = fs.statSync(filePath)
+      var isFile = stats.isFile()
+      var isDir = stats.isDirectory()
+      if (isFile) {
+        // 下划线改为中划线
+        if (filename.indexOf('_') !== -1) {
+          newFilename = filename.replace(/_/g, '-')
+          fs.renameSync(filePath, path.join(fileDir, newFilename))
+          console.log(++completedCount, filename, '===>', newFilename)
         }
-    } catch (e) {
-        console.error(e)
+
+      }
+      if (isDir) {
+        fileDisplay(filePath)
+      }
     }
+  } catch (e) {
+    console.error(e)
+  }
 }
 
 console.log(targetFileList.join('\n'))

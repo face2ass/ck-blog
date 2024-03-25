@@ -94,7 +94,6 @@ hexo.extend.helper.register('category_breadcrumb', function (page) {
       link: url_for(`categories/${pathStrArr.slice(0, i + 1).join('/')}`)
     }
   })
-  console.log('pathArr：', pathArr)
   return `
   <nav>
     <ol class="breadcrumb">
@@ -107,30 +106,22 @@ hexo.extend.helper.register('category_breadcrumb', function (page) {
         <li class="breadcrumb-item ${i === pathArr.length - 1 ? 'active' : ''}">
           <a class="link-body-emphasis fw-semibold text-decoration-none" href="${p.link}">${p.label}</a>
         </li>
-      `)}
+      `).join('')}
     </ol>
   </nav>
 `
 })
 
-// <% if (post.categories.length){ %>
-// <nav style="--bs-breadcrumb-divider: '>';">
-//     <ol class="breadcrumb">
-//     <% post.categories.each(function(cat, index){ %>
-//     <li class="breadcrumb-item <%- index === post.categories.length - 1 ? 'active' : '' %>"><%- cat.name %></li>
-//       <% }) %>
-//     </ol>
-// </nav>
-//   <% } %>
 hexo.extend.helper.register('article_category_breadcrumb', function (post) {
   const categories = post.categories
-  if(categories.length) {
+  const url_for = this.url_for
+  if (categories.length) {
     return `
     <nav style="--bs-breadcrumb-divider: '>';">
       <ol class="breadcrumb">
       ${categories.map((cat, index) => {
-        return `<li class="breadcrumb-item ${index === categories.length - 1 ? 'active' : ''}">${cat.name}</li>`
-      })}
+      return `<li class="breadcrumb-item ${index === categories.length - 1 ? 'active' : ''}"><a href="${url_for(cat.path)}">${cat.name}</a></li>`
+    }).join('')}
       </ol>
     </nav>
     `
@@ -138,32 +129,19 @@ hexo.extend.helper.register('article_category_breadcrumb', function (post) {
   else {
     return ''
   }
-  const path = page.base
-  const url_for = this.url_for
-  const pathStrArr = path.split('/').filter((p, i) => {
-    return i > 0 && p
-  })
-  const pathArr = pathStrArr.map((p, i) => {
-    return {
-      label: p,
-      link: url_for(`categories/${pathStrArr.slice(0, i + 1).join('/')}`)
+})
+
+hexo.extend.helper.register('sort_list', function (list) {
+  const _list = list.map(v => ({ name: v.name, path: v.path, length: v.length }))
+  // 先按文章数，再按首字母排序
+  _list.sort((a, b) => {
+    const delta = b.length - a.length
+    if (delta === 0) {
+      return (a.name).localeCompare(b.name)
+    }
+    else {
+      return delta
     }
   })
-  console.log('pathArr：', pathArr)
-  return `
-  <nav>
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item">
-        <a class="link-body-emphasis" href="${url_for('/')}">
-          <svg class="bi" width="16" height="16"><use xlink:href="#house-door-fill"></use></svg>
-        </a>
-      </li>
-      ${pathArr.map((p, i) => `
-        <li class="breadcrumb-item ${i === pathArr.length - 1 ? 'active' : ''}">
-          <a class="link-body-emphasis fw-semibold text-decoration-none" href="${p.link}">${p.label}</a>
-        </li>
-      `)}
-    </ol>
-  </nav>
-`
+  return _list
 })

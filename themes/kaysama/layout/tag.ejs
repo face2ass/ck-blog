@@ -1,2 +1,10 @@
-<%# partial('_partial/archive', {pagination: config.tag, index: true, type: 'tag'}) %>
-<h1>这是标签页</h1>
+<div class="tag-bar">
+  <svg class="bi me-2">
+    <use href="#tags-fill"></use>
+  </svg>
+  <h3 class="label"><%= page.tag %></h3>
+</div>
+<%# 文章摘要列表 %>
+<%- partial('_partial/article-list.ejs', {type: 'tag'}) %>
+<%# 分页 %>
+<%- partial('_partial/article-list-pager.ejs', {type: 'tag'}) %>
