@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+
+      circle {
+        fill: rgb(31, 119, 180);
+        fill-opacity: .25;
+        stroke: rgb(31, 119, 180);
+        stroke-width: 1px;
+      }
+
+      .leaf circle {
+        fill: #ff7f0e;
+        fill-opacity: 1;
+      }
+
+      text {
+        font: 10px sans-serif;
+        text-anchor: middle;
+      }
+    </style>
+  </head>
+  <body>
+    <svg width="800" height="800"></svg>
+    <script src="./d3.v7.min.js"></script>
+    <script>
+
+      // 定义一个svg画布
+      const svg = d3.select('svg'),
+
+        // 以svg画布的宽度来作为直径的长度
+        diameter = +svg.attr('width'),
+
+        // 定义一个组元素，并将其移动定位
+        g = svg.append('g'),
+
+        // 定义一个格式化函数，该格式化函数将返回参数的整数部分
+        format = d3.format(',d')
+
+      // 创建一个包布局，返回包布局函数pack()
+      var pack = d3.pack()
+
+        // 设置包布局的宽、高尺寸
+        .size([diameter, diameter])
+        .padding(5)
+
+      // 数据处理
+      d3.json('flare.json').then(function (root) {
+        console.log('■flare：', root)
+        // d3.hierarchy函数用来从层次型的数据构造根节点root及其递归的下属节点,计算并为每个节点添加
+        // depth,height,parent,value属性
+        root = d3.hierarchy(root)
+
+          // 对每一个父节点来说，将其所有子节点的size属性的值相加，作为该父节点的value的值，叶子节
+          // 点的size值作为其value值
+          .sum(function (d) { return d.size })
+
+          // 对节点按照value属性值进行排序
+          .sort(function (a, b) { return b.value - a.value })
+
+        // 定义节点元素
+        const node = g.selectAll('.node')
+
+          // pack(root)函数为root节点及其递归的下属节点计算并添加r,x,y属性，r用来确定节点半径的
+          // 大小，x，y用来确定节点的位置
+          // desentdants()函数返回树形结构的数据中的所有节点组成的数组
+          // 此处为节点绑定数据
+          .data(pack(root).descendants())
+          .enter().append('g')
+
+          // 父节点和叶子节点的样式设定
+          .attr('class', function (d) { return d.children ? 'node' : 'leaf node' })
+
+          // 根据节点的x,y来确定其摆放的位置
+          .attr('transform', function (d) {
+            return 'translate(' + d.x + ',' + d.y + ')'
+          })
+
+        // 为节点添加title属性，即鼠标悬浮显示的信息
+        node.append('title')
+          .text(function (d) { return d.data.name + '\n' + format(d.value) })
+
+        // 根据节点的r属性值来绘制代表节点的圆
+        node.append('circle')
+          .attr('r', function (d) { return d.r })
+
+        // 若为叶子节点，则添加文字标签
+        node.filter(function (d) { return !d.children }).append('text')
+          .attr('dy', '0.3em')
+          .text(function (d) { return d.data.name.substring(0, d.r / 3) })
+      })
+
+    </script>
+  </body>
+</html>
