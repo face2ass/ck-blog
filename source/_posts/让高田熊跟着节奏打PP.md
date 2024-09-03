@@ -6,6 +6,7 @@ categories:
 tags:
    - PixiJS
    - Web Audio
+   - Css
 ---
 
 > 这篇博客的灵感源头是B站的这个魔性视频：[「 高田熊 」 跟 着 节 奏，一 起 摇 摆 ~ | takadabear](https://www.bilibili.com/video/BV1uL411g7Yg)，突然想写个高田熊打PP的音乐可视化页面

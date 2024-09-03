@@ -5,6 +5,7 @@ categories:
   - [技术, 前端]
 tags:
   - Tampermonkey
+  - 脚本
 ---
 
 首先怎么安装就不详细说了，去火狐、chrome或edge的应用商店搜索Tampermonkey安装即可。官网在此：[https://www.tampermonkey.net](https://www.tampermonkey.net/)
