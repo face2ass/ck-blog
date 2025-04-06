@@ -136,6 +136,6 @@ OK，基本结构搞定，其他的细枝末节就放到源码里了。
      └── 脊椎动物
 ```
 
-![](/images/hand.webp)[完整代码戳这里](https://gitee.com/kaysama/blog-source-host/tree/master/jQuery%E6%A0%91%E6%8E%A7%E4%BB%B6)
+![](/images/hand.webp)[完整代码戳这里](https://github.com/face2ass/blog-source-host/tree/master/jQuery%E6%A0%91%E6%8E%A7%E4%BB%B6)
 
-![](/images/hand.webp)[在线演示](http://kaysama.gitee.io/blog-source-host/jQuery%E6%A0%91%E6%8E%A7%E4%BB%B6/)
+![](/images/hand.webp)[在线演示](https://blog.omgfaq.com/example/jQuery%E6%A0%91%E6%8E%A7%E4%BB%B6/)

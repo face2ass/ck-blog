@@ -291,6 +291,6 @@ tags:
 
 ```
 
-![](/images/hand.webp)[完整代码戳这里](https://gitee.com/kaysama/blog-source-host/tree/master/%E4%BA%BA%E4%BD%93%E6%97%B6%E9%92%9F)
+![](/images/hand.webp)[完整代码戳这里](https://github.com/face2ass/blog-source-host/tree/master/%E4%BA%BA%E4%BD%93%E6%97%B6%E9%92%9F)
 
-![](/images/hand.webp)[在线演示1](https://kaysama.gitee.io/blog-source-host/%E4%BA%BA%E4%BD%93%E6%97%B6%E9%92%9F)、[在线演示2](https://codepen.io/oj8kay/pen/JjbPvza)
+![](/images/hand.webp)[在线演示1](https://blog.omgfaq.com/example/%E4%BA%BA%E4%BD%93%E6%97%B6%E9%92%9F)、[在线演示2](https://codepen.io/oj8kay/pen/JjbPvza)

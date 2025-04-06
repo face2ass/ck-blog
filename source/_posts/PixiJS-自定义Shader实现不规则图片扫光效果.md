@@ -141,6 +141,6 @@ void main(void)
 
 ![](/images/pixi_shader_1.gif)
 
-![](/images/hand.webp)[完整代码戳这里](https://gitee.com/kaysama/blog-source-host/tree/master/PixiJS+%E8%87%AA%E5%AE%9A%E4%B9%89Shader%E5%AE%9E%E7%8E%B0%E5%9B%BE%E7%89%87%E6%89%AB%E5%85%89%E6%95%88%E6%9E%9C)
+![](/images/hand.webp)[完整代码戳这里](https://github.com/face2ass/blog-source-host/tree/master/PixiJS+%E8%87%AA%E5%AE%9A%E4%B9%89Shader%E5%AE%9E%E7%8E%B0%E5%9B%BE%E7%89%87%E6%89%AB%E5%85%89%E6%95%88%E6%9E%9C)
 
-![](/images/hand.webp)[在线演示1](http://kaysama.gitee.io/blog-source-host/PixiJS+%E8%87%AA%E5%AE%9A%E4%B9%89Shader%E5%AE%9E%E7%8E%B0%E5%9B%BE%E7%89%87%E6%89%AB%E5%85%89%E6%95%88%E6%9E%9C/) 、[在线演示2](https://codepen.io/oj8kay/pen/ZEeQOQb)
+![](/images/hand.webp)[在线演示1](https://blog.omgfaq.com/example/PixiJS+%E8%87%AA%E5%AE%9A%E4%B9%89Shader%E5%AE%9E%E7%8E%B0%E5%9B%BE%E7%89%87%E6%89%AB%E5%85%89%E6%95%88%E6%9E%9C/) 、[在线演示2](https://codepen.io/oj8kay/pen/ZEeQOQb)

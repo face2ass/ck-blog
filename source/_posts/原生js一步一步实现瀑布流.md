@@ -242,5 +242,5 @@ window.onresize = function () {
 
 是不是很简单，后面如果有时间我会对另外两种瀑布流的实现方式也进行讲解。
 
-[完整代码戳这里](https://gitee.com/kaysama/blog-source-host/tree/master/原生js一步一步实现瀑布流)
-[在线demo](http://kaysama.gitee.io/blog-source-host/原生js一步一步实现瀑布流/index.html)
+[完整代码戳这里](https://github.com/face2ass/blog-source-host/tree/master/原生js一步一步实现瀑布流)
+[在线demo](https://blog.omgfaq.com/example/原生js一步一步实现瀑布流/index.html)

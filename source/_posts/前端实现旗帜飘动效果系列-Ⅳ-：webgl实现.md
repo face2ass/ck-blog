@@ -482,9 +482,9 @@ Q = mat3(2n,0,0,  0,2n,0,   0,0,1) * mat3(1,0,0,  0,1,0,   -0.5,-0.5,1) * P
 
 可以得到顶点到纹理的变化矩阵为mat3(2n,0,-n,  0,2n,-n,   0,0,1)的逆矩阵，然后去掉齐次坐标。
 
-![](/images/hand.webp)[完整代码戳这里](https://gitee.com/kaysama/blog-source-host/tree/master/%E5%89%8D%E7%AB%AF%E5%AE%9E%E7%8E%B0%E6%97%97%E5%B8%9C%E9%A3%98%E5%8A%A8%E6%95%88%E6%9E%9C%E7%B3%BB%E5%88%97/webgl%E5%AE%9E%E7%8E%B0)
+![](/images/hand.webp)[完整代码戳这里](https://github.com/face2ass/blog-source-host/tree/master/%E5%89%8D%E7%AB%AF%E5%AE%9E%E7%8E%B0%E6%97%97%E5%B8%9C%E9%A3%98%E5%8A%A8%E6%95%88%E6%9E%9C%E7%B3%BB%E5%88%97/webgl%E5%AE%9E%E7%8E%B0)
 
-![](/images/hand.webp)[Demo1](http://kaysama.gitee.io/blog-source-host/%E5%89%8D%E7%AB%AF%E5%AE%9E%E7%8E%B0%E6%97%97%E5%B8%9C%E9%A3%98%E5%8A%A8%E6%95%88%E6%9E%9C%E7%B3%BB%E5%88%97/webgl%E5%AE%9E%E7%8E%B0/)
+![](/images/hand.webp)[Demo1](https://blog.omgfaq.com/example/%E5%89%8D%E7%AB%AF%E5%AE%9E%E7%8E%B0%E6%97%97%E5%B8%9C%E9%A3%98%E5%8A%A8%E6%95%88%E6%9E%9C%E7%B3%BB%E5%88%97/webgl%E5%AE%9E%E7%8E%B0/)
 
 ![](/images/hand.webp)Demo2：See the Pen [flag waving by webgl](https://codepen.io/oj8kay/pen/PBZjpe/) by Kay ([@oj8kay](https://codepen.io/oj8kay)) on [CodePen](https://codepen.io).
 

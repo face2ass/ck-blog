@@ -514,12 +514,12 @@ var tick = function () {
 
 emmmm，[gif-frames](https://github.com/benwiley4000/gif-frames) 可以把gif导出多张序列帧，后面的原理基本就和视频差不太多了，就给大家当课后作业吧 23333
 
-![](/images/hand.webp)[完整代码戳这里](https://gitee.com/kaysama/blog-source-host/tree/master/%E5%AD%97%E7%AC%A6%E7%94%BB)
+![](/images/hand.webp)[完整代码戳这里](https://github.com/face2ass/blog-source-host/tree/master/%E5%AD%97%E7%AC%A6%E7%94%BB)
 
-![](/images/hand.webp)Demo1：[Bad Apple!!（dom版）](http://kaysama.gitee.io/blog-source-host/%E5%AD%97%E7%AC%A6%E7%94%BB/ascii_art_dom_animate.html)
+![](/images/hand.webp)Demo1：[Bad Apple!!（dom版）](https://blog.omgfaq.com/example/%E5%AD%97%E7%AC%A6%E7%94%BB/ascii_art_dom_animate.html)
 
-![](/images/hand.webp)Demo2：[Big Buck Bunny（canvas版-彩色）](http://kaysama.gitee.io/blog-source-host/%E5%AD%97%E7%AC%A6%E7%94%BB/ascii_art_canvas.html)
+![](/images/hand.webp)Demo2：[Big Buck Bunny（canvas版-彩色）](https://blog.omgfaq.com/example/%E5%AD%97%E7%AC%A6%E7%94%BB/ascii_art_canvas.html)
 
-![](/images/hand.webp)Demo3：[t](http://kaysama.gitee.io/blog-source-host/%E5%AD%97%E7%AC%A6%E7%94%BB/ascii_art_canvas.html)[rump（dom版）](http://kaysama.gitee.io/blog-source-host/%E5%AD%97%E7%AC%A6%E7%94%BB/ascii_art_dom.html)
+![](/images/hand.webp)Demo3：[t](https://blog.omgfaq.com/example/%E5%AD%97%E7%AC%A6%E7%94%BB/ascii_art_canvas.html)[rump（dom版）](https://blog.omgfaq.com/example/%E5%AD%97%E7%AC%A6%E7%94%BB/ascii_art_dom.html)
 
 ![](/images/hand.webp)Demo4：See the Pen [ascii\_art\_pure](https://codepen.io/oj8kay/pen/bOMLOW) by Kay ([@oj8kay](https://codepen.io/oj8kay)) on [CodePen](https://codepen.io).

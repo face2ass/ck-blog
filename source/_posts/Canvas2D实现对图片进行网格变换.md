@@ -97,7 +97,7 @@ const splitV = 10 // 图片分割成的列数
 let splitPoints = [] // 被分割出来的点的集合
 let originSplitPoints // 被分割出来的点的原始集合
 
-let imgUrl = 'https://kaysama.gitee.io/image-host/happy.jpg'
+let imgUrl = './happy.jpg'
 const matches = location.search.substring(1).match(/(^|&)img=([^&]*)(&|$)/)
 if (matches) {
   imgUrl = decodeURI(matches[2])
@@ -329,6 +329,6 @@ function drawArc (point) {
 
 至此，所有功能已经实现，不过还没完。前面几篇博客也都提到过，一旦涉及到大量的像素级操作，在不严格要求兼容性的情况下，webGL始终是性能最优的方案。事实上，webGL内置了一套显卡硬件加速过的矩阵算法，利用这些内置函数来做矩阵运算，性能可以达到数量级的提升，下一篇文章我会用webGL来重构这套实现。
 
-![](/images/hand.webp)[完整代码戳这里](https://gitee.com/kaysama/blog-source-host/blob/master/Canvas2D%E5%AE%9E%E7%8E%B0%E5%AF%B9%E5%9B%BE%E7%89%87%E8%BF%9B%E8%A1%8C%E7%BD%91%E6%A0%BC%E5%8F%98%E6%8D%A2/index.html)
+![](/images/hand.webp)[完整代码戳这里](https://github.com/face2ass/blog-source-host/blob/master/Canvas2D%E5%AE%9E%E7%8E%B0%E5%AF%B9%E5%9B%BE%E7%89%87%E8%BF%9B%E8%A1%8C%E7%BD%91%E6%A0%BC%E5%8F%98%E6%8D%A2/index.html)
 
-![](/images/hand.webp)[在线演示1](http://kaysama.gitee.io/blog-source-host/Canvas2D%E5%AE%9E%E7%8E%B0%E5%AF%B9%E5%9B%BE%E7%89%87%E8%BF%9B%E8%A1%8C%E7%BD%91%E6%A0%BC%E5%8F%98%E6%8D%A2/)、[在线演示2](https://codepen.io/oj8kay/pen/KKVzBEE)
+![](/images/hand.webp)[在线演示1](https://blog.omgfaq.com/example/Canvas2D%E5%AE%9E%E7%8E%B0%E5%AF%B9%E5%9B%BE%E7%89%87%E8%BF%9B%E8%A1%8C%E7%BD%91%E6%A0%BC%E5%8F%98%E6%8D%A2/)、[在线演示2](https://codepen.io/oj8kay/pen/KKVzBEE)

@@ -240,4 +240,4 @@ __________________BBBBBBBBBBBBBBBB,
 
 ![](/images/hand.webp)[本项目的创意工坊地址（~~请科学上网~~）](https://steamcommunity.com/sharedfiles/filedetails/?id=2177282046 )
 
-![](/images/hand.webp)[完整代码戳这里](https://gitee.com/kaysama/blog-source-host/tree/master/%E5%8F%91%E5%B8%83%E7%BD%91%E9%A1%B5%E5%88%B0Wallpaper%20Engine)
+![](/images/hand.webp)[完整代码戳这里](https://github.com/face2ass/blog-source-host/tree/master/%E5%8F%91%E5%B8%83%E7%BD%91%E9%A1%B5%E5%88%B0Wallpaper%20Engine)

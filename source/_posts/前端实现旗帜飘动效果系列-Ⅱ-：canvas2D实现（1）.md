@@ -152,9 +152,9 @@ ok，辛苦你看到现在，代码量也不大，我一次贴出来吧。
 
 似乎基本要主意的就这些了，这次就那么多，下一讲在这个基础上给旗帜添加高光效果。
 
-![](/images/hand.webp)[完整代码戳这里](https://gitee.com/kaysama/blog-source-host/tree/master/%E5%89%8D%E7%AB%AF%E5%AE%9E%E7%8E%B0%E6%97%97%E5%B8%9C%E9%A3%98%E5%8A%A8%E6%95%88%E6%9E%9C%E7%B3%BB%E5%88%97/canvas2D%E5%AE%9E%E7%8E%B0-1)
+![](/images/hand.webp)[完整代码戳这里](https://github.com/face2ass/blog-source-host/tree/master/%E5%89%8D%E7%AB%AF%E5%AE%9E%E7%8E%B0%E6%97%97%E5%B8%9C%E9%A3%98%E5%8A%A8%E6%95%88%E6%9E%9C%E7%B3%BB%E5%88%97/canvas2D%E5%AE%9E%E7%8E%B0-1)
 
-![](/images/hand.webp)[在线演示](http://kaysama.gitee.io/blog-source-host/%E5%89%8D%E7%AB%AF%E5%AE%9E%E7%8E%B0%E6%97%97%E5%B8%9C%E9%A3%98%E5%8A%A8%E6%95%88%E6%9E%9C%E7%B3%BB%E5%88%97/canvas2D%E5%AE%9E%E7%8E%B0-1/)
+![](/images/hand.webp)[在线演示](https://blog.omgfaq.com/example/%E5%89%8D%E7%AB%AF%E5%AE%9E%E7%8E%B0%E6%97%97%E5%B8%9C%E9%A3%98%E5%8A%A8%E6%95%88%E6%9E%9C%E7%B3%BB%E5%88%97/canvas2D%E5%AE%9E%E7%8E%B0-1/)
 
 **目录指引：**
 

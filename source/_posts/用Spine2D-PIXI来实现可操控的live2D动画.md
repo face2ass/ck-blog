@@ -168,6 +168,6 @@ $file.onchange = function () {
 
 如果文章对你有帮助，还请点个赞  ٩( 'ω' )و 
 
-![](/images/hand.webp)[完整代码+工程资源+psd源文件](https://gitee.com/kaysama/blog-source-host/tree/master/%E7%94%A8Spine2D+PIXI%E6%9D%A5%E5%AE%9E%E7%8E%B0%E5%8F%AF%E6%93%8D%E6%8E%A7%E7%9A%84live2D%E5%8A%A8%E7%94%BB)
+![](/images/hand.webp)[完整代码+工程资源+psd源文件](https://github.com/face2ass/blog-source-host/tree/master/%E7%94%A8Spine2D+PIXI%E6%9D%A5%E5%AE%9E%E7%8E%B0%E5%8F%AF%E6%93%8D%E6%8E%A7%E7%9A%84live2D%E5%8A%A8%E7%94%BB)
 
-![](/images/hand.webp)[在线演示1](http://kaysama.gitee.io/blog-source-host/%E7%94%A8Spine2D+PIXI%E6%9D%A5%E5%AE%9E%E7%8E%B0%E5%8F%AF%E6%93%8D%E6%8E%A7%E7%9A%84live2D%E5%8A%A8%E7%94%BB/)、[在线演示2](https://codepen.io/oj8kay/pen/rNWdYyE)
+![](/images/hand.webp)[在线演示1](https://blog.omgfaq.com/example/%E7%94%A8Spine2D+PIXI%E6%9D%A5%E5%AE%9E%E7%8E%B0%E5%8F%AF%E6%93%8D%E6%8E%A7%E7%9A%84live2D%E5%8A%A8%E7%94%BB/)、[在线演示2](https://codepen.io/oj8kay/pen/rNWdYyE)

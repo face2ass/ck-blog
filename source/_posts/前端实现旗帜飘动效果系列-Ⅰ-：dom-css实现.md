@@ -235,9 +235,9 @@ styleHtmlAry.push('}')
 
 到这里我们的dom+css的实现方式就结束啦，这种方式的优点很明显，就是实现简单；缺点也不少，比如无法添加高光效果，整体振幅一致不符合常理，切片过多容易造成的页面阻塞与内存泄露，下一节 我会用canvas2D像素级的操作实现该效果，可以很大程度上避免这些问题。
 
-![](/images/hand.webp)[完整代码戳这里](https://gitee.com/kaysama/blog-source-host/tree/master/%E5%89%8D%E7%AB%AF%E5%AE%9E%E7%8E%B0%E6%97%97%E5%B8%9C%E9%A3%98%E5%8A%A8%E6%95%88%E6%9E%9C%E7%B3%BB%E5%88%97/dom+css%E5%AE%9E%E7%8E%B0)
+![](/images/hand.webp)[完整代码戳这里](https://github.com/face2ass/blog-source-host/tree/master/%E5%89%8D%E7%AB%AF%E5%AE%9E%E7%8E%B0%E6%97%97%E5%B8%9C%E9%A3%98%E5%8A%A8%E6%95%88%E6%9E%9C%E7%B3%BB%E5%88%97/dom+css%E5%AE%9E%E7%8E%B0)
 
-![](/images/hand.webp)[Demo1](http://kaysama.gitee.io/blog-source-host/%E5%89%8D%E7%AB%AF%E5%AE%9E%E7%8E%B0%E6%97%97%E5%B8%9C%E9%A3%98%E5%8A%A8%E6%95%88%E6%9E%9C%E7%B3%BB%E5%88%97/dom+css%E5%AE%9E%E7%8E%B0/)
+![](/images/hand.webp)[Demo1](https://blog.omgfaq.com/example/%E5%89%8D%E7%AB%AF%E5%AE%9E%E7%8E%B0%E6%97%97%E5%B8%9C%E9%A3%98%E5%8A%A8%E6%95%88%E6%9E%9C%E7%B3%BB%E5%88%97/dom+css%E5%AE%9E%E7%8E%B0/)
 
 ![](/images/hand.webp)Demo2：See the Pen [flag waving by dom+css](https://codepen.io/oj8kay/pen/oMvjeK) by Kay ([@oj8kay](https://codepen.io/oj8kay)) on [CodePen](https://codepen.io/).
 

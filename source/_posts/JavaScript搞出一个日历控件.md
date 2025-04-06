@@ -569,6 +569,6 @@ function bindHandlers () {
 
 后面待补充的功能还有很多，面板定位，dom元素创建，触发事件，事件格式化，jquery封装，挖个坑先~
 
-![](/images/hand.webp)[完整代码戳这里](https://gitee.com/kaysama/blog-source-host/tree/master/%E6%97%A5%E6%9C%9F%E9%80%89%E6%8B%A9%E5%99%A8)
+![](/images/hand.webp)[完整代码戳这里](https://github.com/face2ass/blog-source-host/tree/master/%E6%97%A5%E6%9C%9F%E9%80%89%E6%8B%A9%E5%99%A8)
 
-![](/images/hand.webp)[在线演示一](http://kaysama.gitee.io/blog-source-host/%E6%97%A5%E6%9C%9F%E9%80%89%E6%8B%A9%E5%99%A8/index.html)、[在线演示二](https://codepen.io/oj8kay/pen/eoMMbz)
+![](/images/hand.webp)[在线演示一](https://blog.omgfaq.com/example/%E6%97%A5%E6%9C%9F%E9%80%89%E6%8B%A9%E5%99%A8/index.html)、[在线演示二](https://codepen.io/oj8kay/pen/eoMMbz)

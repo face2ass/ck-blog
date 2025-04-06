@@ -446,7 +446,7 @@ def add_item_to_cart(item_id, sku_id, price, ct, nekot, tb_token, stock):
 
 ------
 
-就写到这里，需要完整的代码戳这里 →→ [Python淘宝爬虫程序](https://gitee.com/kaysama/blog-source-host/tree/master/python淘宝爬取)，有兴趣的小伙伴欢迎随时过来打脸。
+就写到这里，需要完整的代码戳这里 →→ [Python淘宝爬虫程序](https://github.com/face2ass/blog-source-host/tree/master/python淘宝爬取)，有兴趣的小伙伴欢迎随时过来打脸。
 
 ------
 
