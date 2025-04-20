@@ -2,7 +2,7 @@
 title: Sequelize常用操作
 date: 2022-07-23 22:28:00
 categories:
-  - [技术, 后端]
+  - [技术, 后端, 数据库]
 tags:
   - Node
   - 数据库

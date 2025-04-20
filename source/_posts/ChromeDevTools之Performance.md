@@ -2,7 +2,7 @@
 title: ChromeDevTools之Performance
 date: 2018-09-02 13:43:00
 categories:
-  - [技术, 前端, 工具]
+  - [技术, 工具]
 tags:
   - 浏览器
 ---

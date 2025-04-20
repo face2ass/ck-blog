@@ -17,4 +17,20 @@
     })
   }
 
+  // 处理展开收起
+  $('.category-tree .toggle-trigger').on('click', function() {
+    const $parent = $(this).parent();
+    $parent.toggleClass('active');
+    $parent.next('.sub-tree').toggle();
+  });
+
+  // 处理叶子节点点击跳转
+  $('.category-tree .leaf, .category-tree .sub-leaf').on('click', function(e) {
+    e.preventDefault();
+    const path = e.target.dataset.path
+    if(path) {
+      window.location.href = location.origin + '/categories/' + path;
+    }
+  });
+
 })(jQuery)

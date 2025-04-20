@@ -155,23 +155,25 @@ hexo.extend.helper.register('category_tree', function (site) {
 
   const tree = nest(list)
   return `
-    <ul class="list-unstyled ps-0">
-      ${tree.map(t => `
-      <li class="mb-1">
-          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse">
-            ${t.name}
-          </button>
-          ${t.children?.length ? `
-          <div class="collapse show" id="home-collapse">
-            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-            ${t.children.map(c => (`
-              <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">${c.name}</a></li>
-            `)).join('')}
-            </ul>
-          </div>
-          ` : ''}
+    <ul class="category-tree">
+      ${tree.map(t => t.length ?`
+      <li class="sub-tree-group">
+        <div class="toggle active">
+          ${t.children?.length ? '<i class="toggle-trigger"></i>' : ''}
+          <span class="leaf" data-path="${t.name}">${t.name} (${t.length})</span>
+        </div>
+        ${t.children?.length ? `
+        <ul class="sub-tree">
+          ${t.children.map(c => (`
+            <li class="sub-leaf">
+              <span data-path="${t.name}/${c.name}">${c.name} (${c.length})</span>
+            </li>
+          `)).join('')}
+        </ul>
+        ` : ''}
       </li>
-    `).join('')}
+    `
+  : '').join('')}
     </ul>
   `
 })

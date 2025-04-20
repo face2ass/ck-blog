@@ -2,7 +2,7 @@
 title: Git工作流程
 date: 2018-09-26 14:25:00
 categories:
-  - [技术, 工具]
+  - [技术]
 tags:
   - Git
 ---

@@ -75,3 +75,83 @@ html {
 ol, ul {
   padding-left: 1.5rem;
 }
+
+/* 树控件整体样式 */
+.category-tree {
+  list-style-type: none;
+  font-family: inherit;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 0;
+
+  & > .sub-tree-group {
+    padding: 8px;
+
+    &:hover {
+      //background-color: #f9f9f9;
+      //border-radius: 8px;
+    }
+    & > .toggle {
+      cursor: pointer;
+      color: #333;
+      transition: color 0.3s ease;
+      position: relative;
+      padding-left: 24px;
+      //opacity: 0.7;
+
+      & > i {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+        width: 16px;
+        height: 16px;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%28204,204,204,1%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+        background-size: cover;
+        transition: transform 0.3s ease, background-image 0.3s ease;
+      }
+
+      & > .leaf {
+        font-weight: bold;
+        font-size: 0.95rem;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      &:active {
+        color: #b4b3b3;
+      }
+
+      &.active > i {
+        transform: translateY(-50%) rotate(90deg);
+      }
+    }
+
+    & > .sub-tree {
+      list-style: none;
+      padding-left: 24px;
+      font-size: 0.85rem;
+      color: #888;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      & > .sub-leaf {
+        cursor: pointer;
+        //opacity: 0.7;
+
+        &:hover {
+          //opacity: 1;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

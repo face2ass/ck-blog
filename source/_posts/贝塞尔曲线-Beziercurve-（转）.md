@@ -3,6 +3,7 @@ title: 贝塞尔曲线(Béziercurve)（转）
 date: 2022-03-07 20:53:00
 categories:
   - [技术, 前端]
+  - [技术, 数学]
 tags:
   - 图形
   - 算法

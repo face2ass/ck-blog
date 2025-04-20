@@ -2,7 +2,7 @@
 title: 油猴脚本-steam批量取消关注
 date: 2021-01-17 18:30:00
 categories:
-  - [前端]
+  - [技术, 前端]
 tags:
   - Tampermonkey
   - 脚本

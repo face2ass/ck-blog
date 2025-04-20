@@ -2,7 +2,7 @@
 title: Eclipse / MyEclipse 的一些习惯设置和优化技巧
 date: 2016-10-12 10:47
 categories:
-- [技术, 后端, 工具]
+- [技术, 工具]
 tags:
 - Eclipse
 - Java
