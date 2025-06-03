@@ -9,3 +9,6 @@ _multiconfig.yml
 .idea
 themes/3-hexo
 themes/landscape
+.env
+config.json
+*.env.local
