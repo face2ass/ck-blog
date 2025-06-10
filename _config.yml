@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://blog.omgfaq.com
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -105,3 +105,9 @@ theme: kaysama
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+algolia:
+  applicationID: "ZQSBN7LVWC"
+  apiKey: "3c454615764862130b336517865c3b55"
+  indexName: "blog_omgfaq_com_articles"
+  chunkSize: 5000

@@ -28,8 +28,12 @@
     <%- favicon_tag(theme.favicon) %>
   <% } %>
   <%- css('bootstrap/bootstrap@5.3.3.min.css') %>
+  <%- css('style/instantsearch.css@8.5.1-satellite-min.css') %>
   <%- css('style/index') %>
 
   <%# 放在head避免夜间模式屏幕在刷新时闪一下 %>
   <%- js('js/color-modes.js') %>
+
+  <%- js('js/algoliasearch@5.27.0.browser.umd.js') %>
+  <%- js('js/instantsearch.js@4.78.3.min.js') %>
 </head>

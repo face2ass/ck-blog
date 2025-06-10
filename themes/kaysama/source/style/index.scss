@@ -51,9 +51,358 @@ html {
   background: transparent;
 }
 
-.pagination {
-  .page-link:focus {
-    box-shadow: none;
+
+#algolia-search-bar {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: 2px solid #ddd;
+  margin-bottom: 20px;
+  color: #666;
+  user-select: none;
+  cursor: pointer;
+
+  > .icon {
+    width: 20px;
+    height: 20px;
+    fill: #666;
+    margin-right: 5px;
+  }
+}
+
+
+/* 弹窗样式 - 黑白灰配色 */
+.algolia-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 50px;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  > .algolia-dialog {
+    background: #fff;
+    border-radius: 6px;
+    width: 90%;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+    > .algolia-dialog-header {
+      padding: 15px 20px;
+      background: #333;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      > .algolia-dialog-title {
+        font-size: 1.3rem;
+        font-weight: 600;
+      }
+
+      > .close-btn {
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1.8rem;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: background 0.2s;
+
+        &:hover {
+          background: rgba(255, 255, 255, 0.1);
+        }
+      }
+
+    }
+
+    > .algolia-dialog-body {
+      padding: 20px;
+      max-height: calc(90vh - 60px);
+      overflow-y: auto;
+
+      /* 搜索框样式 */
+      .search-container {
+        margin-bottom: 20px;
+        position: relative;
+      }
+
+      #searchbox {
+        width: 100%;
+        padding: 14px 20px;
+        font-size: 1.1rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        outline: none;
+        transition: border-color 0.3s;
+        background: #f9f9f9;
+        color: #333;
+      }
+
+      #searchbox:focus {
+        border-color: #666;
+        background: #fff;
+      }
+
+      /* 搜索按钮样式 */
+      .ais-SearchBox-submit {
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: none;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+      }
+
+      .ais-SearchBox-submitIcon {
+        width: 20px;
+        height: 20px;
+        fill: #666;
+      }
+
+      .ais-SearchBox-submit:hover .ais-SearchBox-submitIcon {
+        fill: #222;
+      }
+
+      /* 加载状态 */
+      .ais-SearchBox-loadingIndicator {
+        position: absolute;
+        right: 40px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 20px;
+      }
+
+      .ais-SearchBox-loadingIcon {
+        animation: spin 1s linear infinite;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      /* 搜索结果样式 */
+      #hits {
+        margin-bottom: 20px;
+
+        .ais-Hits-item {
+          padding: 0;
+
+          > .hit {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+            text-align: left;
+            transition: background 0.2s;
+            background: #fff;
+            width: 100%;
+
+            &:hover {
+              background: #f8f8f8;
+            }
+
+            > h3 {
+              margin-bottom: 10px;
+              color: #222;
+              font-size: 1.2rem;
+            }
+
+            > .excerpt {
+              color: #555;
+              margin-bottom: 12px;
+              font-size: 0.95rem;
+              line-height: 1.5;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+
+              > em {
+                font-style: normal;
+                background-color: rgba(255, 200, 0, 0.3);
+                padding: 0 2px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* 元信息样式 */
+.meta-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  color: #999;
+
+  > .category {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 4px;
+
+    &:first-child {
+      &::before {
+        display: none;
+      }
+    }
+
+    &::before {
+      content: ">";
+      margin-right: 4px;
+    }
+  }
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+
+  &.hidden {
+    display: none;
+  }
+
+  > .tag {
+    background: #f0f0f0;
+    color: #555;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 0.8rem;
+  }
+}
+
+.date {
+  white-space: nowrap;
+  margin-left: 10px;
+}
+
+/* 阅读全文按钮 */
+.read-more {
+  display: inline-block;
+  padding: 6px 15px;
+  background: #333;
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  border-radius: 3px;
+  transition: background 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+.read-more:hover {
+  background: #444;
+}
+
+/* 分页样式 */
+#pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 10px 0;
+}
+
+.ais-Pagination-list {
+  display: flex;
+  list-style: none;
+  gap: 6px;
+}
+
+.ais-Pagination-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ais-Pagination-link {
+  display: block;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  border-radius: 3px;
+  color: #666;
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid #ddd;
+  background: #fff;
+  transition: all 0.2s;
+}
+
+.ais-Pagination-item--selected .ais-Pagination-link {
+  background: #333;
+  color: white;
+  border-color: #333;
+}
+
+.ais-Pagination-link:hover {
+  background: #f0f0f0;
+}
+
+/* 无结果样式 */
+.no-results {
+  text-align: center;
+  padding: 30px 20px;
+  color: #666;
+}
+
+.no-results > h3 {
+  margin-bottom: 10px;
+  color: #222;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .algolia-dialog {
+    width: 95%;
+  }
+
+  .meta-info {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .date {
+    margin-left: 0;
+  }
+
+  .hit {
+    padding: 12px;
   }
 }
 
@@ -94,6 +443,7 @@ ol, ul {
       //background-color: #f9f9f9;
       //border-radius: 8px;
     }
+
     & > .toggle {
       cursor: pointer;
       color: #333;

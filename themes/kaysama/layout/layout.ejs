@@ -8,6 +8,28 @@
     <%# svg精灵 %>
     <%- partial('_partial/svg-symbols', null, { cache: true }) %>
 
+    <%# Algolia搜索弹窗 %>
+    <div class="algolia-modal-overlay" id="searchModal">
+      <div class="algolia-dialog">
+        <div class="algolia-dialog-header">
+          <div class="algolia-dialog-title">博客内容搜索</div>
+          <button class="close-btn" id="closeSearch">&times;</button>
+        </div>
+        <div class="algolia-dialog-body">
+          <div class="search-container">
+            <!-- 搜索框将在这里渲染 -->
+            <div id="searchbox"></div>
+          </div>
+
+          <!-- 搜索结果容器 -->
+          <div id="hits"></div>
+
+          <!-- 分页容器 -->
+          <div id="pagination"></div>
+        </div>
+      </div>
+    </div>
+
     <div id="container" class="container">
 
       <%# 页头 %>
