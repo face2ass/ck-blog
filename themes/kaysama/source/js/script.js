@@ -33,6 +33,7 @@
     }
   })
 
+  let _started = false
   // 初始化Algolia搜索
   const { liteClient: algoliasearch } = window['algoliasearch/lite']
   // 初始化Algolia搜索
@@ -113,9 +114,6 @@
     })
   ])
 
-  // 初始化搜索
-  search.start()
-
   const openBtn = document.getElementById('algolia-search-bar')
   const closeBtn = document.getElementById('closeSearch')
   const modal = document.getElementById('searchModal')
@@ -125,6 +123,11 @@
   // const paginationContainer = document.getElementById('pagination');
 
   openBtn.addEventListener('click', () => {
+    if(!_started) {
+      // 初始化搜索
+      search.start()
+      _started = true
+    }
     modal.classList.add('active')
     // 延迟设置焦点以确保搜索框已渲染
     setTimeout(() => {
