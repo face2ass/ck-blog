@@ -27,6 +27,15 @@
   <% if (theme.favicon){ %>
     <%- favicon_tag(theme.favicon) %>
   <% } %>
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?e23b36837620e298db15e202d4d4f569";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
   <%- css('bootstrap/bootstrap@5.3.3.min.css') %>
   <%- css('style/instantsearch.css@8.5.1-satellite-min.css') %>
   <%- css('style/index') %>
