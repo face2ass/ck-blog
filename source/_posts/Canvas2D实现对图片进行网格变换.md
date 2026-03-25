@@ -331,4 +331,4 @@ function drawArc (point) {
 
 ![](/images/hand.webp)[完整代码戳这里](https://github.com/face2ass/blog-source-host/blob/master/Canvas2D%E5%AE%9E%E7%8E%B0%E5%AF%B9%E5%9B%BE%E7%89%87%E8%BF%9B%E8%A1%8C%E7%BD%91%E6%A0%BC%E5%8F%98%E6%8D%A2/index.html)
 
-![](/images/hand.webp)[在线演示1](https://blog.omgfaq.com/example/Canvas2D%E5%AE%9E%E7%8E%B0%E5%AF%B9%E5%9B%BE%E7%89%87%E8%BF%9B%E8%A1%8C%E7%BD%91%E6%A0%BC%E5%8F%98%E6%8D%A2/)、[在线演示2](https://codepen.io/oj8kay/pen/KKVzBEE)
+![](/images/hand.webp)[在线演示1](https://blog.giegie.cn/example/Canvas2D%E5%AE%9E%E7%8E%B0%E5%AF%B9%E5%9B%BE%E7%89%87%E8%BF%9B%E8%A1%8C%E7%BD%91%E6%A0%BC%E5%8F%98%E6%8D%A2/)、[在线演示2](https://codepen.io/oj8kay/pen/KKVzBEE)

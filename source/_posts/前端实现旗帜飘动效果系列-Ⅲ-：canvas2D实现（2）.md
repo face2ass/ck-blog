@@ -94,7 +94,7 @@ var tick = function () {
 
 ![](/images/hand.webp)[完整代码戳这里](https://github.com/face2ass/blog-source-host/tree/master/%E5%89%8D%E7%AB%AF%E5%AE%9E%E7%8E%B0%E6%97%97%E5%B8%9C%E9%A3%98%E5%8A%A8%E6%95%88%E6%9E%9C%E7%B3%BB%E5%88%97/canvas2D%E5%AE%9E%E7%8E%B0-2)
 
-![](/images/hand.webp)[Demo1](https://blog.omgfaq.com/example/%E5%89%8D%E7%AB%AF%E5%AE%9E%E7%8E%B0%E6%97%97%E5%B8%9C%E9%A3%98%E5%8A%A8%E6%95%88%E6%9E%9C%E7%B3%BB%E5%88%97/canvas2D%E5%AE%9E%E7%8E%B0-2/)
+![](/images/hand.webp)[Demo1](https://blog.giegie.cn/example/%E5%89%8D%E7%AB%AF%E5%AE%9E%E7%8E%B0%E6%97%97%E5%B8%9C%E9%A3%98%E5%8A%A8%E6%95%88%E6%9E%9C%E7%B3%BB%E5%88%97/canvas2D%E5%AE%9E%E7%8E%B0-2/)
 
 ![](/images/hand.webp)Demo2：See the Pen [flag waving by canvas2d(pixel)](https://codepen.io/oj8kay/pen/RBrPEp)  by Kay ([@oj8kay](https://codepen.io/oj8kay)) on [CodePen](https://codepen.io/).
 

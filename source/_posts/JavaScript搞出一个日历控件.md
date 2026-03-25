@@ -571,4 +571,4 @@ function bindHandlers () {
 
 ![](/images/hand.webp)[完整代码戳这里](https://github.com/face2ass/blog-source-host/tree/master/%E6%97%A5%E6%9C%9F%E9%80%89%E6%8B%A9%E5%99%A8)
 
-![](/images/hand.webp)[在线演示一](https://blog.omgfaq.com/example/%E6%97%A5%E6%9C%9F%E9%80%89%E6%8B%A9%E5%99%A8/index.html)、[在线演示二](https://codepen.io/oj8kay/pen/eoMMbz)
+![](/images/hand.webp)[在线演示一](https://blog.giegie.cn/example/%E6%97%A5%E6%9C%9F%E9%80%89%E6%8B%A9%E5%99%A8/index.html)、[在线演示二](https://codepen.io/oj8kay/pen/eoMMbz)

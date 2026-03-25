@@ -345,4 +345,4 @@ ok，大功告成，预览一下效果图——
 
 ![](/images/hand.webp) [完整代码戳这里](https://github.com/face2ass/blog-source-host/tree/master/3D%E7%9B%B8%E7%89%87)
 
-![](/images/hand.webp)[在线演示1](https://blog.omgfaq.com/example/3D%E7%9B%B8%E7%89%87/index.html)，[在线演示2](http://codepen.io/oj8kay/full/JjdoORm)
+![](/images/hand.webp)[在线演示1](https://blog.giegie.cn/example/3D%E7%9B%B8%E7%89%87/index.html)，[在线演示2](http://codepen.io/oj8kay/full/JjdoORm)

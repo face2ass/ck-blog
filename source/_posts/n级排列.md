@@ -33,4 +33,4 @@ tags:
 
 ![](/images/hand.webp)[完整代码戳这里](https://github.com/face2ass/blog-source-host/blob/master/n%E7%BA%A7%E6%8E%92%E5%88%97/index.html)
 
-![](/images/hand.webp)[在线演示1](https://blog.omgfaq.com/example/n%E7%BA%A7%E6%8E%92%E5%88%97/)、[在线演示2](https://codepen.io/oj8kay/pen/QWybzgG)
+![](/images/hand.webp)[在线演示1](https://blog.giegie.cn/example/n%E7%BA%A7%E6%8E%92%E5%88%97/)、[在线演示2](https://codepen.io/oj8kay/pen/QWybzgG)

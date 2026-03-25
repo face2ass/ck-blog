@@ -190,4 +190,4 @@ $audio.addEventListener('play', e => {
 
 ![](/images/hand.webp)[完整代码戳这里](https://github.com/face2ass/blog-source-host/blob/master/%E8%AE%A9%E9%AB%98%E7%94%B0%E7%86%8A%E8%B7%9F%E7%9D%80%E8%8A%82%E5%A5%8F%E6%89%93%E5%B1%81%E5%B1%81/index.html)
 
-![](/images/hand.webp)[在线演示](https://blog.omgfaq.com/example/让高田熊跟着节奏打屁屁/)
+![](/images/hand.webp)[在线演示](https://blog.giegie.cn/example/让高田熊跟着节奏打屁屁/)

@@ -110,7 +110,7 @@ void main(void){
 
 ![](/images/hand.webp)[完整代码戳这里](https://github.com/face2ass/blog-source-host/tree/master/%E5%89%8D%E7%AB%AF%E5%AE%9E%E7%8E%B0%E6%97%97%E5%B8%9C%E9%A3%98%E5%8A%A8%E6%95%88%E6%9E%9C%E7%B3%BB%E5%88%97/pixi%E5%AE%9E%E7%8E%B0)
 
-![](/images/hand.webp)[在线演示1](https://blog.omgfaq.com/example/%E5%89%8D%E7%AB%AF%E5%AE%9E%E7%8E%B0%E6%97%97%E5%B8%9C%E9%A3%98%E5%8A%A8%E6%95%88%E6%9E%9C%E7%B3%BB%E5%88%97/pixi%E5%AE%9E%E7%8E%B0/index.html)、[在线演示2](https://codepen.io/oj8kay/pen/vYyjwGv)
+![](/images/hand.webp)[在线演示1](https://blog.giegie.cn/example/%E5%89%8D%E7%AB%AF%E5%AE%9E%E7%8E%B0%E6%97%97%E5%B8%9C%E9%A3%98%E5%8A%A8%E6%95%88%E6%9E%9C%E7%B3%BB%E5%88%97/pixi%E5%AE%9E%E7%8E%B0/index.html)、[在线演示2](https://codepen.io/oj8kay/pen/vYyjwGv)
 
 **目录指引：**
 

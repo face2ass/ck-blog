@@ -123,4 +123,4 @@ function onImgLoaded () {
 
 ![](/images/hand.webp)[完整代码戳这里](https://github.com/face2ass/blog-source-host/blob/master/%E5%AD%97%E7%AC%A6%E7%94%BB/ascii_art_css.html)
 
-![](/images/hand.webp)[在线演示1](https://blog.omgfaq.com/example/%E5%AD%97%E7%AC%A6%E7%94%BB/ascii_art_css.html)、[在线演示2](https://codepen.io/oj8kay/pen/NWxEzgx)
+![](/images/hand.webp)[在线演示1](https://blog.giegie.cn/example/%E5%AD%97%E7%AC%A6%E7%94%BB/ascii_art_css.html)、[在线演示2](https://codepen.io/oj8kay/pen/NWxEzgx)
