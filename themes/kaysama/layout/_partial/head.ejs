@@ -24,6 +24,7 @@
     <%= config.title %>
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="algolia-site-verification"  content="8A22A986FCA516FD" />
   <% if (theme.favicon){ %>
     <%- favicon_tag(theme.favicon) %>
   <% } %>
@@ -37,12 +38,12 @@
     })();
   </script>
   <%- css('bootstrap/bootstrap@5.3.3.min.css') %>
-  <%- css('style/instantsearch.css@8.5.1-satellite-min.css') %>
+  <%- css('style/instantsearch@8.12.0satellite-min.css') %>
   <%- css('style/index') %>
 
   <%# 放在head避免夜间模式屏幕在刷新时闪一下 %>
   <%- js('js/color-modes.js') %>
 
-  <%- js('js/algoliasearch@5.27.0.browser.umd.js') %>
-  <%- js('js/instantsearch.js@4.78.3.min.js') %>
+  <%- js('js/algoliasearch@5.50.0.browser.umd.js') %>
+  <%- js('js/instantsearch@4.92.1.production.min.js') %>
 </head>

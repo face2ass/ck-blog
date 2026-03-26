@@ -37,9 +37,9 @@
   // 初始化Algolia搜索
   const { liteClient: algoliasearch } = window['algoliasearch/lite']
   // 初始化Algolia搜索
-  const searchClient = algoliasearch('ZQSBN7LVWC', '056dd1c3b772aafea665e1573e0837a9')
+  const searchClient = algoliasearch('TOZSB8GOVI', '9427339fa3b5bde1db7a8b14fade49b1')
   const search = instantsearch({
-    indexName: 'blog_omgfaq_com_articles',
+    indexName: 'my_blog_articles',
     searchClient
   })
 
