@@ -28,7 +28,7 @@ tags:
 
 实现页面效果如下：
 
-<video src="/videos/Kei.mp4" controls="controls" width="466" height="270"></video>
+<video src="/videos/kei.mp4" controls="controls" width="466" height="270"></video>
 
 #### 核心实现要点
 ##### 一、编辑器相关
