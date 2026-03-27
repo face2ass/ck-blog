@@ -1,9 +1,9 @@
-@import "_partial/highlight";
-@import "_partial/header";
-@import "_partial/sidebar";
-@import "_partial/archive";
-@import "_partial/article";
-@import "bootstrap_ported";
+@use "_partial/highlight";
+@use "_partial/header";
+@use "_partial/sidebar";
+@use "_partial/archive";
+@use "_partial/article";
+@use "bootstrap_ported";
 
 html {
   overflow: scroll;

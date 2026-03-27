@@ -68,13 +68,13 @@
     instantsearch.widgets.hits({
       container: '#hits',
       templates: {
-        item (hit, { html, components, sendEvent }) {
-          console.log('■hits：', html, components, sendEvent)
+        item (hit, { html, components }) {
+          console.log('■hits：', hit)
           return html`
             <div class="hit">
               <div class="meta-info">
                 <div class="categories">
-                  ${hit.categories.map(category => html`<span class="category">${category.name}</span>`)}
+                  ${hit.categories?.map(category => html`<span class="category">${category.name}</span>`) || ''}
                 </div>
                 <div class="date">
                   ${new Date(hit.date).toLocaleDateString('zh-CN')}
@@ -83,8 +83,8 @@
 
               <h3>${components.Highlight({ hit, attribute: 'title' })}</h3>
 
-              <div class="tags ${hit.tags.length ? 'show' : 'hidden'}">
-                ${hit.tags.map(tag => html`<span class="tag">${tag.name}</span>`)}
+              <div class="tags ${hit.tags?.length ? 'show' : 'hidden'}">
+                ${hit.tags?.map(tag => html`<span class="tag">${tag.name}</span>`) || ''}
               </div>
 
               <div class="excerpt">

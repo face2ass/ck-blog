@@ -2,7 +2,27 @@
 <%# 文章详情 %>
 <article class="blog-post">
   <h2 class="display-5 link-body-emphasis mb-1"><%= page.title %></h2>
-  <p class="blog-post-meta"><%= date(page.date) %></p>
+  <div class="blog-post-meta">
+    <div class="blog-post-date">
+      <%= date(page.date) %>
+    </div>
+    <% if (page.categories && page.categories.length) { %>
+      <div class="blog-post-category">
+        分类:
+        <% page.categories.forEach(function(category){ %>
+          <a href="<%- url_for(category.path) %>"><%= category.name %></a>
+        <% }) %>
+      </div>
+    <% } %>
+    <% if (page.tags && page.tags.length) { %>
+      <div class="blog-post-tags">
+        标签:
+        <% page.tags.forEach(function(tag){ %>
+          <a href="<%- url_for(tag.path) %>"><%= tag.name %></a>
+        <% }) %>
+      </div>
+    <% } %>
+  </div>
   <div id="blog-post-content">
     <%- page.content %>
   </div>

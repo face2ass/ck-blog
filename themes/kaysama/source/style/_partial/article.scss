@@ -28,6 +28,7 @@
       //color: var(--bs-link-hover-color);
       opacity: 0.6;
     }
+
     // bootstrap 样式修改
     &.blockquote {
       font-size: 1.1rem;
@@ -36,6 +37,54 @@
 }
 
 .blog-post-meta {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
   color: #727272;
+  display: flex;
+  margin-top: 1rem;
+
+  & > .blog-post-date {
+    padding-right: 1.25rem;
+    margin-right: 1.25rem;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      width: 1px;
+      height: 1rem;
+      background-color: #ccc;
+    }
+  }
+
+  & > .blog-post-category {
+    margin-right: 1.25rem;
+  }
+
+  a {
+    color: var(--bs-body-color);
+  }
+}
+
+@media (max-width: 700px) {
+  .blog-post-meta {
+    flex-direction: column;
+    margin-top: 0.5rem;
+
+    & > .blog-post-date {
+      padding-right: 0;
+      margin-right: 0;
+      margin-bottom: 0.5rem;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    & > .blog-post-category {
+      margin-right: 0;
+    }
+  }
 }
